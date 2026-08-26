@@ -1,0 +1,5548 @@
+[
+  {
+    "scientific_name": "Adiantum raddianum",
+    "common_name_cl": "Culantrillo",
+    "aliases": [
+      "helecho culantrillo",
+      "adianto",
+      "cabello de Venus"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'helecho_humedo' — Base interior CL (greengrowshop 5-7d verano) ajustada a la baja: grupo mas sediento",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "frondas cafes y quebradizas por aire seco",
+      "caida de hojitas",
+      "amarillamiento por sol directo",
+      "sustrato hidrofobico si se seco del todo"
+    ],
+    "care_archetype": "helecho_humedo",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aglaonema commutatum",
+    "common_name_cl": "Aglaonema",
+    "aliases": [
+      "aglaonema rosada",
+      "aglaonema pink",
+      "siempre verde china"
+    ],
+    "category": "interior",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 14,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base chilena interior",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "bordes cafés por agua con cloro",
+      "hojas amarillas por frío bajo 15°C",
+      "pérdida de color rosado por poca luz",
+      "pudrición basal"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Alocasia macrorrhizos",
+    "common_name_cl": "Manto de Eva",
+    "aliases": [
+      "alocasia",
+      "oreja de elefante",
+      "manto de eva"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base chilena interior; alto consumo en crecimiento",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas y caída de una hoja por cada nueva (normal)",
+      "gutación abundante",
+      "dormancia en invierno (parece muerta)",
+      "arañita roja"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Alocasia reginula",
+    "common_name_cl": "Alocasia Black Velvet",
+    "aliases": [
+      "black velvet",
+      "alocasia negra"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez rapida por falta de agua",
+      "puntas cafes por baja humedad",
+      "hojas amarillas por sobrerriego",
+      "gutacion (normal)"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Alocasia wentii",
+    "common_name_cl": "Alocasia wentii",
+    "aliases": [
+      "wentii",
+      "alocasia hardy"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez rapida por falta de agua",
+      "puntas cafes por baja humedad",
+      "hojas amarillas por sobrerriego",
+      "gutacion (normal)"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Alocasia x amazonica",
+    "common_name_cl": "Alocasia",
+    "aliases": [
+      "alocasia amazonica",
+      "alocasia polly",
+      "oreja de elefante"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "dormancia invernal (parece muerta pero rebrota)",
+      "aranita roja",
+      "hojas amarillas de a una (normal)",
+      "gutacion abundante"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Amydrium medium",
+    "common_name_cl": "Amydrium",
+    "aliases": [
+      "amydrium silver",
+      "amidrium"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Anthurium andraeanum",
+    "common_name_cl": "Anturio",
+    "aliases": [
+      "anthurio",
+      "flor flamenco",
+      "anturio rojo"
+    ],
+    "category": "interior",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 10,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior + necesidad de humedad constante",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "puntas cafés por agua dura",
+      "deja de florecer por poca luz",
+      "hojas amarillas por sobrerriego",
+      "flores verdosas al envejecer (normal)"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Anthurium clarinervium",
+    "common_name_cl": "Anturio clarinervium",
+    "aliases": [
+      "clarinervium",
+      "anturio de hoja aterciopelada"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Anthurium crystallinum",
+    "common_name_cl": "Anturio cristalinum",
+    "aliases": [
+      "crystallinum",
+      "anturio cristalino"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aphelandra squarrosa",
+    "common_name_cl": "Afelandra",
+    "aliases": [
+      "afelandra",
+      "planta cebra",
+      "aphelandra"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "marchitez rapida por falta de agua",
+      "puntas cafes por baja humedad",
+      "hojas amarillas por sobrerriego",
+      "gutacion (normal)"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ardisia crenata",
+    "common_name_cl": "Ardisia",
+    "aliases": [
+      "christmas berry",
+      "ardisia",
+      "arbolito de coral"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aspidistra elatior",
+    "common_name_cl": "Aspidistra",
+    "aliases": [
+      "planta de hierro",
+      "hoja de saldon"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "baja",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "crecimiento muy lento (normal)",
+      "puntas cafes por agua dura",
+      "quemadura con sol directo",
+      "polvo en las hojas"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Asplenium nidus",
+    "common_name_cl": "Helecho nido de ave",
+    "aliases": [
+      "asplenium",
+      "helecho asplenium",
+      "nido de ave"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'helecho_humedo' — Base interior CL (greengrowshop 5-7d verano) ajustada a la baja: grupo mas sediento",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "frondas cafes y quebradizas por aire seco",
+      "caida de hojitas",
+      "amarillamiento por sol directo",
+      "sustrato hidrofobico si se seco del todo"
+    ],
+    "care_archetype": "helecho_humedo",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Beaucarnea recurvata",
+    "common_name_cl": "Pata de elefante",
+    "aliases": [
+      "nolina",
+      "pata de elefante",
+      "palma cola de caballo"
+    ],
+    "category": "interior",
+    "base_watering_days": 17,
+    "min_watering_days": 11,
+    "max_watering_days": 28,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_dura' — kenaz.cl zamioculca 14-21d verano; greengrowshop suculentas",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudricion de base/rizoma por exceso de agua",
+      "hojas arrugadas por sequia extrema",
+      "crecimiento detenido en sombra",
+      "puntas cafes secas"
+    ],
+    "care_archetype": "suculenta_dura",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Begonia maculata",
+    "common_name_cl": "Begonia lunar",
+    "aliases": [
+      "begonia maculata",
+      "begonia alas de angel",
+      "begonia listada"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Begonia rex",
+    "common_name_cl": "Begonia rex",
+    "aliases": [
+      "begonia real",
+      "begonia pintada"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Begonia x corallina",
+    "common_name_cl": "Begonia alitas de angel",
+    "aliases": [
+      "dragon wing",
+      "begonia dragon",
+      "alitas de angel"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ceropegia woodii",
+    "common_name_cl": "Rosario",
+    "aliases": [
+      "collar de corazones",
+      "rosario",
+      "cadena de corazones",
+      "ceropegia"
+    ],
+    "category": "interior",
+    "base_watering_days": 14,
+    "min_watering_days": 9,
+    "max_watering_days": 25,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (categoría suculenta: 10-15d verano, greengrowshop.cl)",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "guías largas sin hojas por poca luz",
+      "tubérculos podridos por sobrerriego",
+      "hojas arrugadas por sed",
+      "enredo y quiebre de guías"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Chamaedorea elegans",
+    "common_name_cl": "Palmera bella",
+    "aliases": [
+      "neanthe bella",
+      "palmerita",
+      "palma de salón",
+      "camedorea"
+    ],
+    "category": "interior",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 10,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior (5-7d verano)",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "puntas cafés por aire seco",
+      "arañita roja en ambiente seco de Santiago",
+      "hojas amarillas por sobrerriego",
+      "quemaduras con sol directo"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Chlorophytum comosum",
+    "common_name_cl": "Mala madre",
+    "aliases": [
+      "cinta",
+      "lazo de amor",
+      "malamadre",
+      "planta araña"
+    ],
+    "category": "interior",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 12,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior; muy tolerante en ambos extremos",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "puntas cafés por flúor/cloro del agua potable",
+      "hojas pálidas por sol directo",
+      "corona pudrida por sobrerriego",
+      "deja de dar hijuelos por poca luz"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cissus rhombifolia",
+    "common_name_cl": "Cissus",
+    "aliases": [
+      "hiedra uva",
+      "cissus",
+      "parra de interior"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Codiaeum variegatum",
+    "common_name_cl": "Croton",
+    "aliases": [
+      "croton",
+      "croto",
+      "capa de josé"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cordyline fruticosa",
+    "common_name_cl": "Cordyline",
+    "aliases": [
+      "dracena cordyline",
+      "ti",
+      "arbol de la suerte"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ctenanthe burle-marxii",
+    "common_name_cl": "Ctenanthe",
+    "aliases": [
+      "marantha ctenanthe",
+      "ctenante",
+      "espina de pescado"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Curio herreianus",
+    "common_name_cl": "Sandia",
+    "aliases": [
+      "senecio herrianus",
+      "collar de sandias",
+      "rosario sandia"
+    ],
+    "category": "interior",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Curio rowleyanus",
+    "common_name_cl": "Rosario",
+    "aliases": [
+      "collar de perlas",
+      "senecio rowleyanus",
+      "rosario de perlas"
+    ],
+    "category": "interior",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "perlas arrugadas por sed",
+      "guias podridas en el centro por sobrerriego",
+      "guias largas y peladas por poca luz",
+      "se quiebra al moverla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cycas revoluta",
+    "common_name_cl": "Palmera cyca",
+    "aliases": [
+      "cyca",
+      "cica",
+      "palmera sagu",
+      "sago"
+    ],
+    "category": "interior",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "MUY TOXICA: la semilla puede matar a un perro",
+      "hojas amarillas por falta de manganeso",
+      "cochinilla",
+      "crecimiento lentisimo (una corona al año)"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cyclamen persicum",
+    "common_name_cl": "Ciclamen",
+    "aliases": [
+      "ciclamen",
+      "violeta de Persia",
+      "pan de puerco"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "TOXICO: el tubérculo es la parte mas peligrosa",
+      "hojas amarillas al llegar el calor (dormancia normal)",
+      "pudricion si se moja la corona",
+      "regar desde el plato, no encima"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Davallia fejeensis",
+    "common_name_cl": "Pata de conejo",
+    "aliases": [
+      "helecho pata de conejo",
+      "davallia"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'helecho_humedo' — Base interior CL (greengrowshop 5-7d verano) ajustada a la baja: grupo mas sediento",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "frondas cafes y quebradizas por aire seco",
+      "caida de hojitas",
+      "amarillamiento por sol directo",
+      "sustrato hidrofobico si se seco del todo"
+    ],
+    "care_archetype": "helecho_humedo",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dieffenbachia seguine",
+    "common_name_cl": "Dieffenbachia",
+    "aliases": [
+      "difenbaquia",
+      "amoena",
+      "reflector",
+      "pictus",
+      "caña muda"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "savia que quema la boca (nombre 'caña muda')",
+      "hojas amarillas bajas por sobrerriego",
+      "tallo largo y pelado",
+      "quemadura por sol directo"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dizygotheca elegantissima",
+    "common_name_cl": "Aralia fina",
+    "aliases": [
+      "schefflera elegantissima",
+      "aralia elegante",
+      "falsa aralia"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dracaena angolensis",
+    "common_name_cl": "Sansevieria cilindrica",
+    "aliases": [
+      "sansevieria cilindrica",
+      "sansevieria trenzada",
+      "lanza africana"
+    ],
+    "category": "interior",
+    "base_watering_days": 17,
+    "min_watering_days": 11,
+    "max_watering_days": 28,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_dura' — kenaz.cl zamioculca 14-21d verano; greengrowshop suculentas",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pudricion de base/rizoma por exceso de agua",
+      "hojas arrugadas por sequia extrema",
+      "crecimiento detenido en sombra",
+      "puntas cafes secas"
+    ],
+    "care_archetype": "suculenta_dura",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dracaena fragrans",
+    "common_name_cl": "Palo de agua",
+    "aliases": [
+      "palo de Brasil",
+      "tronco de Brasil",
+      "janet craig",
+      "dracena compacta",
+      "dracena lemon",
+      "masangeana"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "puntas cafes por fluor del agua potable (muy comun en CL)",
+      "tronco blando por agua estancada en la corona",
+      "hojas bajas amarillas (normal)",
+      "crecimiento hacia la ventana"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dracaena marginata",
+    "common_name_cl": "Drácena",
+    "aliases": [
+      "dracena marginata",
+      "tronco de Brasil (confusión con D. fragrans)",
+      "drácena de Madagascar"
+    ],
+    "category": "interior",
+    "base_watering_days": 10,
+    "min_watering_days": 7,
+    "max_watering_days": 18,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior + tolerancia a sequía",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "puntas cafés por flúor del agua potable",
+      "caída de hojas bajas (normal)",
+      "tallo blando por sobrerriego",
+      "crecimiento torcido hacia la ventana"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dracaena reflexa",
+    "common_name_cl": "Dracena helicoidal",
+    "aliases": [
+      "dracena reflexa",
+      "song of India",
+      "canción de la India"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caida de hojas al cambiarla de lugar",
+      "puntas cafes por agua dura",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dracaena trifasciata",
+    "common_name_cl": "Lengua de suegra",
+    "aliases": [
+      "sansevieria",
+      "sanseveria",
+      "espada de San Jorge",
+      "lengua de tigre"
+    ],
+    "category": "interior",
+    "base_watering_days": 16,
+    "min_watering_days": 10,
+    "max_watering_days": 30,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general (greengrowshop.cl categoría suculentas/bajo riego) + guías de vivero CL",
+    "light_need": "baja",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "base blanda y pudrición por sobrerriego",
+      "hojas arrugadas por sequía extrema",
+      "puntas cafés secas",
+      "hojas caídas hacia los lados"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Dypsis lutescens",
+    "common_name_cl": "Palmera areca",
+    "aliases": [
+      "areca",
+      "palmera bambú",
+      "palma amarilla"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior; consumo alto por masa foliar",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "puntas cafés por baja humedad",
+      "arañita roja",
+      "hojas amarillas por falta de fierro",
+      "caída de foliolos inferiores"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Epipremnum aureum",
+    "common_name_cl": "Potus",
+    "aliases": [
+      "poto",
+      "potus",
+      "potho",
+      "pothos",
+      "malamadre (confusión frecuente)"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (Terra Chile): 7d primavera, 5d verano, 14d invierno",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "tallos largos y pelados por poca luz",
+      "hojas amarillas basales por sobrerriego",
+      "pérdida de variegación",
+      "puntas cafés por agua con cloro"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Euphorbia pulcherrima",
+    "common_name_cl": "Corona del Inca",
+    "aliases": [
+      "flor de Navidad",
+      "pascuero",
+      "poinsettia",
+      "estrella federal"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pierde todas las hojas despues de Navidad (normal)",
+      "no vuelve a ponerse roja sin oscuridad forzada",
+      "savia blanca irritante",
+      "caida de hojas por corriente de aire frio"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Fatsia japonica",
+    "common_name_cl": "Aralia japonica",
+    "aliases": [
+      "aralia",
+      "fatsia",
+      "aralia japonesa"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "baja",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus altissima",
+    "common_name_cl": "Ficus altissima",
+    "aliases": [
+      "ficus altissima",
+      "ficus yellow gem"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caida de hojas al cambiarla de lugar",
+      "puntas cafes por agua dura",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus benjamina",
+    "common_name_cl": "Ficus benjamina",
+    "aliases": [
+      "benjamina",
+      "ficus llorón",
+      "ficus trenzado",
+      "ficus daniel"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caida masiva de hojas ante cualquier cambio (su marca registrada)",
+      "cochinilla pegajosa",
+      "hojas amarillas por sobrerriego",
+      "raices agresivas en exterior"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus binnendijkii",
+    "common_name_cl": "Ficus Alli",
+    "aliases": [
+      "ficus alli",
+      "ficus amstel king",
+      "ficus hawai"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caida de hojas al cambiarla de lugar",
+      "puntas cafes por agua dura",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus elastica",
+    "common_name_cl": "Gomero",
+    "aliases": [
+      "gomero burgundy",
+      "ficus elástica",
+      "árbol del caucho"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior + ajuste por hoja coriácea",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caída de hojas bajas por corriente de aire frío",
+      "hojas amarillas por sobrerriego",
+      "savia blanca irritante al podar",
+      "pérdida de color rojizo por poca luz"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus lyrata",
+    "common_name_cl": "Ficus lyrata",
+    "aliases": [
+      "gomero pera",
+      "ficus lira",
+      "higuera hoja de violín"
+    ],
+    "category": "interior",
+    "base_watering_days": 8,
+    "min_watering_days": 6,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior + ajuste por hábito leñoso",
+    "light_need": "alta",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "manchas cafés en el centro de la hoja (edema)",
+      "caída de hojas por cambio de lugar",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus microcarpa",
+    "common_name_cl": "Ficus moclame",
+    "aliases": [
+      "moclame",
+      "ficus ginseng",
+      "ficus bonsai",
+      "ficus retusa"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caida de hojas al cambiarla de lugar",
+      "puntas cafes por agua dura",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ficus pumila",
+    "common_name_cl": "Ficus repens",
+    "aliases": [
+      "ficus repens",
+      "ficus trepador",
+      "enredadera ficus"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Fittonia albivenis",
+    "common_name_cl": "Fitonia",
+    "aliases": [
+      "fittonia",
+      "planta mosaico",
+      "planta nerviosa"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'helecho_humedo' — Base interior CL (greengrowshop 5-7d verano) ajustada a la baja: grupo mas sediento",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "se desmaya entera si se seca (revive al regar)",
+      "quemadura de hojas con sol",
+      "pudricion por sobrerriego",
+      "pierde color en sombra total"
+    ],
+    "care_archetype": "helecho_humedo",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Goeppertia lancifolia",
+    "common_name_cl": "Calathea insignis",
+    "aliases": [
+      "calathea lancifolia",
+      "planta serpiente cascabel"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Goeppertia makoyana",
+    "common_name_cl": "Calathea makoyana",
+    "aliases": [
+      "calathea makoyana",
+      "planta pavo real"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Goeppertia orbifolia",
+    "common_name_cl": "Calathea",
+    "aliases": [
+      "calatea",
+      "calathea orbifolia",
+      "planta pavo real"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (kenaz.cl: mantener sustrato levemente húmedo) + base interior ajustada a la baja",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafés y crujientes por aire seco y agua con cloro",
+      "hojas enrolladas por sed",
+      "manchas por agua sobre la hoja",
+      "movimiento nictinástico (normal)"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Goeppertia ornata",
+    "common_name_cl": "Calathea ornata",
+    "aliases": [
+      "calathea ornata",
+      "calathea pinstripe"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Goeppertia zebrina",
+    "common_name_cl": "Calathea zebrina",
+    "aliases": [
+      "calathea zebrina",
+      "planta cebra"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Guzmania lingulata",
+    "common_name_cl": "Bromelia",
+    "aliases": [
+      "bromelia",
+      "guzmania",
+      "bromelia variegada"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "la planta madre muere despues de florecer (normal, deja hijuelos)",
+      "pudricion si se deja agua vieja en el vaso central",
+      "puntas cafes por agua dura",
+      "flor que dura meses y luego se apaga"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Howea forsteriana",
+    "common_name_cl": "Palmera kentia",
+    "aliases": [
+      "kentia",
+      "palmera del paraiso"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "puntas cafes por agua dura o aire seco",
+      "aranita roja",
+      "hojas amarillas por sobrerriego",
+      "crecimiento muy lento (normal, por eso es cara)"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hoya australis",
+    "common_name_cl": "Clepia australis",
+    "aliases": [
+      "hoya australis",
+      "clepia",
+      "flor de cera"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hoya carnosa",
+    "common_name_cl": "Clepia",
+    "aliases": [
+      "flor de cera",
+      "hoya",
+      "clepia variegada",
+      "planta de cera"
+    ],
+    "category": "interior",
+    "base_watering_days": 12,
+    "min_watering_days": 8,
+    "max_watering_days": 21,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (somosfuinque.cl/kenaz.cl: regar cuando el sustrato esté seco) + hoja suculenta",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "no florece por poca luz o por cortar los pedúnculos viejos",
+      "hojas arrugadas por sed",
+      "pudrición por sobrerriego",
+      "cochinilla algodonosa"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Hoya wayetii",
+    "common_name_cl": "Clepia wayetii",
+    "aliases": [
+      "hoya wayetii",
+      "clepia"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hypoestes phyllostachya",
+    "common_name_cl": "Hipoeste",
+    "aliases": [
+      "hipoestes",
+      "planta de las pecas",
+      "planta lunares"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ipomoea batatas",
+    "common_name_cl": "Batata ornamental",
+    "aliases": [
+      "camote ornamental",
+      "pink frost",
+      "ipomea"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Maranta leuconeura",
+    "common_name_cl": "Maranta",
+    "aliases": [
+      "planta de la oración",
+      "maranta tricolor"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (mismo grupo Marantaceae que calathea)",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "puntas cafés por baja humedad",
+      "hojas que no se abren de noche por estrés",
+      "amarillamiento por sobrerriego",
+      "arañita roja"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Maranta leuconeura 'Lemon Lime'",
+    "common_name_cl": "Maranta lemon lime",
+    "aliases": [
+      "maranta lemon lime",
+      "maranta variegada"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Monstera adansonii",
+    "common_name_cl": "Monstera adansonii",
+    "aliases": [
+      "monstera esqueleto",
+      "costilla de Adan chica",
+      "monkey mask"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Monstera deliciosa",
+    "common_name_cl": "Costilla de Adán",
+    "aliases": [
+      "monstera",
+      "costilla de Adán",
+      "hoja de queso",
+      "filodendro (mal usado en CL)"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (fmdos.cl; kenaz.cl): 1x/semana primavera, 2x/semana verano, 10-14d invierno",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por exceso de riego",
+      "hojas sin fenestrar por poca luz",
+      "puntas cafés por aire seco",
+      "gutación (gotas en bordes)"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Musa acuminata",
+    "common_name_cl": "Banano",
+    "aliases": [
+      "banano",
+      "musa",
+      "platanera",
+      "banano variegado"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas rasgadas por viento o al rozar (normal)",
+      "puntas cafes por aire seco",
+      "aranita roja",
+      "consumo de agua altisimo en verano"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Nephrolepis exaltata",
+    "common_name_cl": "Helecho espada",
+    "aliases": [
+      "helecho",
+      "nefrolepis",
+      "helecho rizado"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior ajustada a la baja; el más sediento del grupo",
+    "light_need": "baja",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "frondas cafés y quebradizas por aire seco de Santiago",
+      "caída masiva de hojitas",
+      "amarillamiento por sol directo",
+      "sustrato hidrofóbico si se secó del todo"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Oxalis triangularis",
+    "common_name_cl": "Trebol africano",
+    "aliases": [
+      "oxalis",
+      "trebol morado",
+      "falso trebol",
+      "trebol de la suerte"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "cierra las hojas de noche (normal)",
+      "dormancia con hojas secas (rebrota del bulbo)",
+      "pudricion de bulbo por sobrerriego",
+      "se estira hacia la luz"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pachira aquatica",
+    "common_name_cl": "Arbol del dinero",
+    "aliases": [
+      "pachira",
+      "castaño de Guayana",
+      "arbol del dinero trenzado"
+    ],
+    "category": "interior",
+    "base_watering_days": 9,
+    "min_watering_days": 6,
+    "max_watering_days": 16,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'lenosa_interior' — Base interior CL + ajuste al alza por hoja coriacea / reserva en tallo",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "caida de hojas al cambiarla de lugar",
+      "puntas cafes por agua dura",
+      "hojas amarillas por sobrerriego",
+      "polvo que bloquea la luz"
+    ],
+    "care_archetype": "lenosa_interior",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Peperomia caperata",
+    "common_name_cl": "Peperomia caperata",
+    "aliases": [
+      "peperomia rugosa",
+      "peperomia emerald ripple"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Peperomia obtusifolia",
+    "common_name_cl": "Peperomia cucharita",
+    "aliases": [
+      "peperomia cucharita",
+      "peperomia verde",
+      "peperomia lemon"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Peperomia prostrata",
+    "common_name_cl": "Peperomia prostrata",
+    "aliases": [
+      "string of turtles",
+      "collar de tortugas"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Peperomia puteolata",
+    "common_name_cl": "Peperomia puteolata",
+    "aliases": [
+      "peperomia sandia rayada"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Peperomia tetraphylla",
+    "common_name_cl": "Peperomia Hope",
+    "aliases": [
+      "peperomia hope",
+      "peperomia trepadora"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Phalaenopsis amabilis",
+    "common_name_cl": "Orquidea",
+    "aliases": [
+      "orquidea",
+      "phalaenopsis",
+      "orquidea mariposa"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "raices plateadas = sed, verdes = hidratada",
+      "pudricion por sustrato de tierra (necesita corteza)",
+      "no rebrota si se corta la vara muy abajo",
+      "hojas arrugadas por raiz danada"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron 'Birkin'",
+    "common_name_cl": "Filodendro Birkin",
+    "aliases": [
+      "birkin",
+      "philodendron birkin"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "reversion a verde sin rayas por poca luz",
+      "puntas cafes",
+      "hojas amarillas por sobrerriego",
+      "crecimiento lento en invierno"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron billietiae",
+    "common_name_cl": "Filodendro billietiae",
+    "aliases": [
+      "billietiae",
+      "peciolo naranjo"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron brandtianum",
+    "common_name_cl": "Filodendro brandtianum",
+    "aliases": [
+      "brandtianum",
+      "brandi"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron erubescens",
+    "common_name_cl": "Filodendro rojo",
+    "aliases": [
+      "pink princess",
+      "white princess",
+      "white knight",
+      "red emerald",
+      "imperial red",
+      "imperial golden"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "perdida de variegacion (rosado/blanco) por poca luz",
+      "hojas totalmente blancas que se queman",
+      "entrenudos largos",
+      "hojas amarillas por sobrerriego"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron gloriosum",
+    "common_name_cl": "Filodendro gloriosum",
+    "aliases": [
+      "gloriosum"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron hastatum",
+    "common_name_cl": "Silver Sword",
+    "aliases": [
+      "filodendro hastatum",
+      "espada plateada",
+      "silver sword"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron hederaceum",
+    "common_name_cl": "Filodendro",
+    "aliases": [
+      "filodendro trepador",
+      "philodendron brasil",
+      "filo"
+    ],
+    "category": "interior",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "entrenudos largos por poca luz",
+      "hojas amarillas por sobrerriego",
+      "puntas cafés",
+      "pérdida de variegación en 'Brasil'"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron mamei",
+    "common_name_cl": "Filodendro mamei",
+    "aliases": [
+      "mamei",
+      "silver cloud"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron ornatum",
+    "common_name_cl": "Filodendro ornatum",
+    "aliases": [
+      "ornatum"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron squamiferum",
+    "common_name_cl": "Filodendro squamiferum",
+    "aliases": [
+      "squamiferum",
+      "pata de gallo"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron tortum",
+    "common_name_cl": "Filodendro tortum",
+    "aliases": [
+      "tortum"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Philodendron verrucosum",
+    "common_name_cl": "Filodendro verrucosum",
+    "aliases": [
+      "verrucosum"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pilea cadierei",
+    "common_name_cl": "Planta de aluminio",
+    "aliases": [
+      "pilea cadierei",
+      "planta aluminio",
+      "pilea de aluminio"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pilea mollis",
+    "common_name_cl": "Pilea moon valley",
+    "aliases": [
+      "pilea mollis",
+      "valle de la luna"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pilea peperomioides",
+    "common_name_cl": "Dólar verde",
+    "aliases": [
+      "planta del dinero",
+      "pilea",
+      "planta china del dinero",
+      "moneda china"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "tallo inclinado hacia la luz (rotar la maceta)",
+      "hojas caídas por sed",
+      "hojas amarillas bajas por sobrerriego",
+      "hojas chicas por poca luz"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Platycerium bifurcatum",
+    "common_name_cl": "Cuerno de alce",
+    "aliases": [
+      "cuerno de alce",
+      "platycerium",
+      "helecho cuerno"
+    ],
+    "category": "interior",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'helecho_humedo' — Base interior CL (greengrowshop 5-7d verano) ajustada a la baja: grupo mas sediento",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas escudo cafes en la base (normal, no arrancar)",
+      "pudricion si se riega el centro",
+      "frondas caidas por sed",
+      "se monta en tabla, no en maceta"
+    ],
+    "care_archetype": "helecho_humedo",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Plectranthus verticillatus",
+    "common_name_cl": "Dólar",
+    "aliases": [
+      "dólar variegado",
+      "planta del dinero",
+      "hiedra sueca",
+      "dolarín"
+    ],
+    "category": "interior",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 11,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "tallos pelados por poca luz",
+      "hojas amarillas por sobrerriego",
+      "hojas pegajosas/pulgones",
+      "olor fuerte al tocarla (normal)"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Rhaphidophora decursiva",
+    "common_name_cl": "Rafidofora decursiva",
+    "aliases": [
+      "rhaphidophora decursiva"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Rhaphidophora tetrasperma",
+    "common_name_cl": "Mini monstera",
+    "aliases": [
+      "rafidofora",
+      "monstera minima",
+      "filodendro minima"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Saxifraga stolonifera",
+    "common_name_cl": "Saxifraga",
+    "aliases": [
+      "saxifraga pink",
+      "begonia de fresa",
+      "planta de los estolones"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Schefflera arboricola",
+    "common_name_cl": "Cheflera",
+    "aliases": [
+      "schefflera",
+      "scheflera",
+      "árbol paraguas",
+      "cheflera variegada"
+    ],
+    "category": "interior",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 14,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base chilena interior",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "caída de hojas por cambio de luz o riego",
+      "tallos largos y desnudos",
+      "arañita roja",
+      "hojas pegajosas por cochinilla"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Scindapsus pictus",
+    "common_name_cl": "Potus plateado",
+    "aliases": [
+      "scindapsus",
+      "pothus scindapsus",
+      "potus satin"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Sedum morganianum",
+    "common_name_cl": "Cola de burro",
+    "aliases": [
+      "cola de burro",
+      "cola de borrego",
+      "sedum morganianum"
+    ],
+    "category": "interior",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pierde hojas al minimo roce (ubicar donde no se pase)",
+      "guias podridas por sobrerriego",
+      "etiolacion por poca luz",
+      "hojas arrugadas por sed"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Spathiphyllum wallisii",
+    "common_name_cl": "Espatifilo",
+    "aliases": [
+      "spatifilium",
+      "spatifilo",
+      "cuna de Moisés",
+      "vela del viento",
+      "flor de la paz"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 8,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general interior (5-7d verano) ajustada por su marchitez rápida",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez dramática y recuperable por falta de agua",
+      "puntas cafés por agua dura o cloro",
+      "no florece por poca luz",
+      "hojas amarillas por sobrerriego"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Strelitzia nicolai",
+    "common_name_cl": "Strelitzia",
+    "aliases": [
+      "ave del paraíso gigante",
+      "estrelitzia",
+      "strelicia"
+    ],
+    "category": "interior",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 14,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base chilena interior; poca fuente CL con número",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas rasgadas (normal, no es daño)",
+      "puntas cafés por sequía",
+      "hojas amarillas por sobrerriego",
+      "no crece por maceta chica"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Stromanthe thalia",
+    "common_name_cl": "Stromanthe Triostar",
+    "aliases": [
+      "stromanthe sanguinaria",
+      "calathea tricolor",
+      "triostar"
+    ],
+    "category": "interior",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 7,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'marantacea' — Base interior CL + kenaz.cl 'sustrato levemente humedo' para calathea",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "bordes cafes por agua con cloro y aire seco",
+      "hojas enrolladas por sed",
+      "manchas por mojar la hoja",
+      "aranita roja"
+    ],
+    "care_archetype": "marantacea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Syngonium podophyllum",
+    "common_name_cl": "Singonio",
+    "aliases": [
+      "singonio",
+      "syngonium",
+      "oreja de Shrek",
+      "pie de cabra",
+      "batik",
+      "mojito",
+      "confetti",
+      "starlite"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas que pierden la forma de flecha al madurar (normal)",
+      "perdida de rosado por poca luz",
+      "guias largas",
+      "hojas amarillas por sobrerriego"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Thaumatophyllum bipinnatifidum",
+    "common_name_cl": "Filodendro paraguayo",
+    "aliases": [
+      "philodendron bipinnatifidum",
+      "philodendron selloum",
+      "guaimbe"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Thaumatophyllum xanadu",
+    "common_name_cl": "Filodendro xanadu",
+    "aliases": [
+      "philodendron xanadu",
+      "xanadu"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Tradescantia spathacea",
+    "common_name_cl": "Maguey morado",
+    "aliases": [
+      "tradescantia spathacea",
+      "rhoeo",
+      "cuna de Moises (confusion)"
+    ],
+    "category": "interior",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "pudricion basal por sobrerriego",
+      "cochinilla algodonosa",
+      "tallos largos por poca luz"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Tradescantia zebrina",
+    "common_name_cl": "Amor de hombre",
+    "aliases": [
+      "tradescantia",
+      "zebrina",
+      "judío errante",
+      "amor de hombre morado"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 10,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base chilena interior; crecimiento rápido",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pérdida del morado por poca luz",
+      "centro pelado y guías largas",
+      "tallos podridos por sobrerriego",
+      "hojas secas por sol directo fuerte"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Tradescantia zebrina 'Nanouk'",
+    "common_name_cl": "Tradescantia Nanouk",
+    "aliases": [
+      "nanouk",
+      "tradescantia rosada",
+      "amor de hombre rosado"
+    ],
+    "category": "interior",
+    "base_watering_days": 7,
+    "min_watering_days": 5,
+    "max_watering_days": 12,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'tropical_medio' — Anclado a monstera 7d primavera (fmdos.cl) y potus 7d primavera (Terra Chile)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego",
+      "entrenudos largos por poca luz",
+      "puntas cafes por aire seco",
+      "perdida de variegacion"
+    ],
+    "care_archetype": "tropical_medio",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Yucca elephantipes",
+    "common_name_cl": "Yuca",
+    "aliases": [
+      "yuca",
+      "yuca pie de elefante",
+      "izote"
+    ],
+    "category": "interior",
+    "base_watering_days": 17,
+    "min_watering_days": 11,
+    "max_watering_days": 28,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_dura' — kenaz.cl zamioculca 14-21d verano; greengrowshop suculentas",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "tronco blando y hueco por sobrerriego (mata la planta)",
+      "puntas cafes",
+      "hojas bajas amarillas (normal)",
+      "hojas de punta filosa a la altura de los ojos"
+    ],
+    "care_archetype": "suculenta_dura",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Zamioculcas zamiifolia",
+    "common_name_cl": "Zamioculca",
+    "aliases": [
+      "ZZ",
+      "planta ZZ",
+      "zamio",
+      "gema de Zanzíbar"
+    ],
+    "category": "interior",
+    "base_watering_days": 18,
+    "min_watering_days": 12,
+    "max_watering_days": 30,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (kenaz.cl): 14-21d verano, ~30d invierno",
+    "light_need": "baja",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pudrición de rizoma por exceso de agua",
+      "tallos amarillos desde la base",
+      "caída de foliolos",
+      "crecimiento detenido en sombra total"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Zantedeschia aethiopica",
+    "common_name_cl": "Cala",
+    "aliases": [
+      "cartucho",
+      "alcatraz",
+      "cala blanca"
+    ],
+    "category": "interior",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'aroide_sediento' — Base interior CL (5-7d verano) ajustada a la baja por masa foliar/marchitez rapida",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas tras la floracion (dormancia normal)",
+      "pudricion de rizoma en maceta sin drenaje",
+      "no florece con poca luz",
+      "caracoles en exterior"
+    ],
+    "care_archetype": "aroide_sediento",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Acorus gramineus",
+    "common_name_cl": "Acoro",
+    "aliases": [
+      "acorus limon",
+      "acoro",
+      "calamo enano"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Agapanthus praecox",
+    "common_name_cl": "Agapanto",
+    "aliases": [
+      "agapanto",
+      "lirio africano",
+      "flor del amor"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 8,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base exterior chilena (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "no florece si se cambia de maceta muy seguido (le gusta apretado)",
+      "hojas amarillas en invierno (normal)",
+      "caracoles",
+      "pudrición de rizoma en maceta sin drenaje"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aptenia cordifolia",
+    "common_name_cl": "Aptenia",
+    "aliases": [
+      "rayito de sol",
+      "aptenia",
+      "escarcha"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Arbutus unedo",
+    "common_name_cl": "Madrono",
+    "aliases": [
+      "madroño",
+      "arbutus",
+      "albedro"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Bougainvillea glabra",
+    "common_name_cl": "Bugambilia",
+    "aliases": [
+      "buganvilia",
+      "santa rita",
+      "bugambilia",
+      "veranera"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 12,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base exterior chilena; florece mejor con estrés hídrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muchas hojas y pocas flores por exceso de agua o nitrógeno",
+      "pierde hojas en invierno (normal)",
+      "espinas",
+      "brotes quemados por helada"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Bulbine frutescens",
+    "common_name_cl": "Bulbine",
+    "aliases": [
+      "bulbine",
+      "bulbines bicolor",
+      "aloe amarillo"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Buxus sempervirens",
+    "common_name_cl": "Boj",
+    "aliases": [
+      "boj",
+      "buxus",
+      "boj comun"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Calendula officinalis",
+    "common_name_cl": "Calendula",
+    "aliases": [
+      "caléndula",
+      "maravilla",
+      "flor de muerto (confusion)"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Camellia japonica",
+    "common_name_cl": "Camelia",
+    "aliases": [
+      "camelia",
+      "camelia japónica",
+      "rosa de invierno"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (kenaz.cl: florece en invierno, zona centro-sur)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "caída de botones sin abrir por sequía o cambio brusco",
+      "hojas amarillas por sustrato alcalino (clorosis, común con agua de Santiago)",
+      "manchas cafés en pétalos",
+      "quemadura por sol de mediodía"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Carpobrotus chilensis",
+    "common_name_cl": "Doca",
+    "aliases": [
+      "doca",
+      "doca chilena",
+      "frutilla de mar"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Chamaerops humilis",
+    "common_name_cl": "Palmera enana",
+    "aliases": [
+      "palmito",
+      "palmera europea"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cistanthe grandiflora",
+    "common_name_cl": "Pata de guanaco",
+    "aliases": [
+      "pata de guanaco",
+      "cistanthe",
+      "calandrinia"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Citrus japonica",
+    "common_name_cl": "Kumquat",
+    "aliases": [
+      "kumquat",
+      "naranjo enano",
+      "quinoto"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 2,
+    "max_watering_days": 8,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_citrico' — Base exterior CL en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "clorosis entre nervaduras por falta de fierro/zinc",
+      "caida de frutos chicos",
+      "minador de los citricos",
+      "conchuela"
+    ],
+    "care_archetype": "ext_citrico",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Citrus x limon",
+    "common_name_cl": "Limonero",
+    "aliases": [
+      "limonero",
+      "limón de Pica (variedad)",
+      "citrus limón"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 2,
+    "max_watering_days": 8,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general exterior en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas entre nervaduras por falta de fierro/zinc (clorosis, muy común en maceta)",
+      "caída de frutos chicos",
+      "minador de los cítricos",
+      "conchuela"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Citrus x sinensis",
+    "common_name_cl": "Naranjo",
+    "aliases": [
+      "naranjo",
+      "naranjo dulce",
+      "citrus sinensis"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 2,
+    "max_watering_days": 8,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_citrico' — Base exterior CL en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "clorosis entre nervaduras por falta de fierro/zinc",
+      "caida de frutos chicos",
+      "minador de los citricos",
+      "conchuela"
+    ],
+    "care_archetype": "ext_citrico",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Coprosma repens",
+    "common_name_cl": "Coprosma",
+    "aliases": [
+      "coprosma",
+      "coprosma baueri",
+      "planta espejo"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cupressus sempervirens",
+    "common_name_cl": "Cipres italiano",
+    "aliases": [
+      "ciprés italiano",
+      "cipres piramidal"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Dietes grandiflora",
+    "common_name_cl": "Diete",
+    "aliases": [
+      "dietes",
+      "lirio africano silvestre",
+      "iris mariposa"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Escallonia rubra",
+    "common_name_cl": "Escalonia",
+    "aliases": [
+      "escalonia",
+      "siete camisas",
+      "barraco"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Francoa appendiculata",
+    "common_name_cl": "Vara de marmol",
+    "aliases": [
+      "vara de marmol",
+      "llaupangue",
+      "francoa"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Fuchsia magellanica",
+    "common_name_cl": "Chilco",
+    "aliases": [
+      "chilco",
+      "fucsia",
+      "aljaba",
+      "palo blanco"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "nativa chilena: sufre con el sol pleno de Santiago",
+      "caida de botones por sequia",
+      "aranita roja en verano seco",
+      "poda dura en invierno la rejuvenece"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Gardenia jasminoides",
+    "common_name_cl": "Gardenia",
+    "aliases": [
+      "gardenia",
+      "jazmin del Cabo"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "clorosis amarilla por agua dura de Santiago (el problema n°1)",
+      "botones que caen sin abrir",
+      "conchuela y fumagina",
+      "exige sustrato acido"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Gazania rigens",
+    "common_name_cl": "Gazania",
+    "aliases": [
+      "gazania",
+      "flor del tesoro"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 10,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación desde base exterior chilena; muy resistente a sequía",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "flores cerradas en días nublados (normal)",
+      "pudrición por riego excesivo",
+      "centro que se abre y despuebla",
+      "oidio en otoño"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hebe x andersonii",
+    "common_name_cl": "Veronica",
+    "aliases": [
+      "hebe",
+      "veronica",
+      "veronica arbustiva"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hedera helix",
+    "common_name_cl": "Hiedra",
+    "aliases": [
+      "hiedra",
+      "hiedra variegada",
+      "yedra"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 10,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (plantket.cl catálogo exterior)",
+    "light_need": "baja",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "arañita roja en interior seco",
+      "pérdida de variegación en sombra",
+      "hojas secas por sol directo intenso",
+      "invasora si toca el suelo"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Helichrysum italicum",
+    "common_name_cl": "Curry",
+    "aliases": [
+      "planta de curry",
+      "curry perenne",
+      "helicriso"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hibiscus rosa-sinensis",
+    "common_name_cl": "Hibisco",
+    "aliases": [
+      "hibisco",
+      "rosa de China",
+      "cayena"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Hydrangea macrophylla",
+    "common_name_cl": "Hortensia",
+    "aliases": [
+      "hortensia",
+      "hydrangea",
+      "hortensia azul"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 2,
+    "min_watering_days": 1,
+    "max_watering_days": 4,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (kenaz.cl: prefiere luz indirecta y suelo ácido) + consumo muy alto en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez diaria al sol de la tarde en Santiago",
+      "bordes cafés por sol directo",
+      "cambio de color según pH del sustrato",
+      "brotes nuevos quemados por helada tardía"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Hydrangea quercifolia",
+    "common_name_cl": "Hortensia de hoja de roble",
+    "aliases": [
+      "hortensia quercifolia",
+      "hortensia roble"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Jasminum polyanthum",
+    "common_name_cl": "Jazmin chino",
+    "aliases": [
+      "jazmin",
+      "jazmin chino",
+      "jazmin de invierno"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Lampranthus spectabilis",
+    "common_name_cl": "Rayo de sol",
+    "aliases": [
+      "rayo de sol",
+      "lampranto",
+      "margarita de mar"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Lavandula dentata",
+    "common_name_cl": "Lavanda francesa",
+    "aliases": [
+      "lavanda",
+      "lavandín",
+      "espliego",
+      "alhucema"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 5,
+    "min_watering_days": 3,
+    "max_watering_days": 12,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (kenaz.cl: riego profundo y espaciado, cada 3-4d exterior)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pudrición de cuello por riego frecuente o sustrato pesado",
+      "centro leñoso sin podar",
+      "hongos por humedad en la base",
+      "flores escasas en semisombra"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Leptospermum scoparium",
+    "common_name_cl": "Leptospermum",
+    "aliases": [
+      "arbol del te",
+      "manuka",
+      "leptospermum"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Limonium perezii",
+    "common_name_cl": "Siempreviva de mar",
+    "aliases": [
+      "limonium",
+      "statice",
+      "lavanda de mar"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Lobelia erinus",
+    "common_name_cl": "Lobelia",
+    "aliases": [
+      "lobelia",
+      "lobelia azul"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Luma apiculata",
+    "common_name_cl": "Arrayan",
+    "aliases": [
+      "arrayan",
+      "palo colorado",
+      "temu"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Mandevilla sanderi",
+    "common_name_cl": "Dipladenia",
+    "aliases": [
+      "dipladenia",
+      "mandevilla",
+      "jazmin de Chile"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "deja de florecer si se pasa de agua o de sombra",
+      "savia lechosa irritante",
+      "pierde hojas con el frio",
+      "pulgones en los brotes"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Mentha spicata",
+    "common_name_cl": "Menta",
+    "aliases": [
+      "menta",
+      "hierbabuena",
+      "yerbabuena"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Myoporum parvifolium",
+    "common_name_cl": "Miosporo rastrero",
+    "aliases": [
+      "miosporo",
+      "mioporo",
+      "miosporo rastrero"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Nandina domestica",
+    "common_name_cl": "Nandina",
+    "aliases": [
+      "nandina",
+      "bambu sagrado",
+      "bambu celestial"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Nassella tenuissima",
+    "common_name_cl": "Stipa",
+    "aliases": [
+      "stipa tenuissima",
+      "pasto pluma",
+      "pasto de las pampas enano"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Nerium oleander",
+    "common_name_cl": "Adelfa",
+    "aliases": [
+      "laurel de flor",
+      "adelfa",
+      "laurel rosa"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "EXTREMADAMENTE TOXICA: una hoja puede matar a una mascota",
+      "savia irritante al podar",
+      "conchuela",
+      "hojas amarillas por sobrerriego"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Ocimum basilicum",
+    "common_name_cl": "Albahaca",
+    "aliases": [
+      "albahaca",
+      "basilico"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "muere apenas florece si no se despunta",
+      "marchitez diaria en verano de Santiago",
+      "pulgones",
+      "no soporta nada de helada"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Olea europaea",
+    "common_name_cl": "Olivo",
+    "aliases": [
+      "olivo",
+      "aceituno",
+      "olivo en maceta"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego en maceta mucho mas que por sequia",
+      "clorosis por sustrato compactado",
+      "conchuela y fumagina",
+      "no fructifica en maceta chica"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Origanum vulgare",
+    "common_name_cl": "Oregano",
+    "aliases": [
+      "orégano"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Osteospermum ecklonis",
+    "common_name_cl": "Dimorfoteca",
+    "aliases": [
+      "dimorfoteca",
+      "margarita africana",
+      "osteospermum"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pelargonium x hortorum",
+    "common_name_cl": "Malvón",
+    "aliases": [
+      "geranio",
+      "malvón",
+      "cardenal (en algunos viveros CL)"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 8,
+    "watering_confidence": "media",
+    "watering_source": "Chilena general exterior",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas con manchas por sobrerriego",
+      "tallos largos y pelados sin poda",
+      "polilla del geranio (muy común en Chile central)",
+      "botritis en las flores"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Photinia x fraseri",
+    "common_name_cl": "Fotinia",
+    "aliases": [
+      "fotinia",
+      "photinia red robin"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Phyla nodiflora",
+    "common_name_cl": "Tiqui tiqui",
+    "aliases": [
+      "tiqui tiqui",
+      "tiquitiqui",
+      "lipia"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Pittosporum tobira",
+    "common_name_cl": "Pitosporo enano",
+    "aliases": [
+      "pitosporo",
+      "tito",
+      "azarero",
+      "pittosporum enano"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Plectranthus neochilus",
+    "common_name_cl": "Plectranthus neochilus",
+    "aliases": [
+      "plectranthus neochilus",
+      "boldo rastrero",
+      "salvia rastrera"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Puya chilensis",
+    "common_name_cl": "Chagual",
+    "aliases": [
+      "chagual",
+      "puya",
+      "cardon"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Rhododendron simsii",
+    "common_name_cl": "Azalea",
+    "aliases": [
+      "azalea",
+      "azalea japonica"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "MUY TOXICA para perros y gatos",
+      "clorosis por agua alcalina de Santiago (necesita sustrato acido)",
+      "botones que caen por sequia",
+      "arana roja"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Rosa x hybrida",
+    "common_name_cl": "Rosa",
+    "aliases": [
+      "rosal",
+      "rosa",
+      "rosa en maceta"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "oidio (polvo blanco) en primavera humeda",
+      "manchas negras en las hojas",
+      "pulgones en los botones",
+      "pocas flores sin poda de invierno"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Salvia rosmarinus",
+    "common_name_cl": "Romero",
+    "aliases": [
+      "romero",
+      "rosmarinus officinalis (nombre antiguo)"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Chilena (kenaz.cl: resistente a sequía)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudrición radicular por exceso de riego (causa de muerte n°1 en maceta)",
+      "ramas secas internas",
+      "oidio en zonas húmedas",
+      "porte desgarbado sin poda"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Schinus polygamus",
+    "common_name_cl": "Huingan",
+    "aliases": [
+      "huingan",
+      "huingán",
+      "boldillo"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 8,
+    "min_watering_days": 5,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Arquetipo 'ext_nativa_seca' — Estimacion: nativa/mediterranea adaptada a secano de Chile central",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "muere por exceso de riego mas que por sequia",
+      "clorosis en sustrato alcalino",
+      "porte abierto sin poda",
+      "poca floracion en sombra"
+    ],
+    "care_archetype": "ext_nativa_seca",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Solanum rantonnetii",
+    "common_name_cl": "Solano",
+    "aliases": [
+      "solano",
+      "solanum",
+      "jazmin azul"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Thymus vulgaris",
+    "common_name_cl": "Tomillo",
+    "aliases": [
+      "tomillo"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Trachelospermum jasminoides",
+    "common_name_cl": "Jazmin estrella",
+    "aliases": [
+      "jazmin estrella",
+      "falso jazmin",
+      "jazmin chino (confusion)"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Viburnum tinus",
+    "common_name_cl": "Laurentina",
+    "aliases": [
+      "laurentina",
+      "duraznillo",
+      "viburno"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 4,
+    "min_watering_days": 3,
+    "max_watering_days": 9,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_arbustiva' — Base exterior CL (2-3x/semana verano)",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas amarillas por sobrerriego en maceta",
+      "porte desgarbado sin poda",
+      "clorosis por agua alcalina de Santiago",
+      "caracoles"
+    ],
+    "care_archetype": "ext_arbustiva",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Viola x wittrockiana",
+    "common_name_cl": "Pensamiento",
+    "aliases": [
+      "pensamiento",
+      "mini viola",
+      "violeta de jardin"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 3,
+    "min_watering_days": 2,
+    "max_watering_days": 6,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_flor' — Base exterior CL (2-3x/semana verano, greengrowshop/kenaz); alto consumo en maceta",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "marchitez al sol de la tarde en Santiago",
+      "botones que caen sin abrir",
+      "oidio en otono",
+      "pulgones en brotes nuevos"
+    ],
+    "care_archetype": "ext_flor",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Washingtonia robusta",
+    "common_name_cl": "Palmera washingtonia",
+    "aliases": [
+      "washingtonia",
+      "palmera abanico",
+      "palmera mexicana"
+    ],
+    "category": "exterior_maceta",
+    "base_watering_days": 6,
+    "min_watering_days": 4,
+    "max_watering_days": 14,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'ext_mediterranea' — kenaz.cl: riego profundo y espaciado; especies de bajo consumo hidrico",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudricion de cuello por riego frecuente o sustrato pesado",
+      "centro lenoso sin podar",
+      "hongos por humedad en la base",
+      "floracion escasa en semisombra"
+    ],
+    "care_archetype": "ext_mediterranea",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aeonium 'Kiwi'",
+    "common_name_cl": "Aeonium Kiwi",
+    "aliases": [
+      "kiwi",
+      "aeonium kiwi",
+      "aeonium tricolor"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aeonium arboreum 'Zwartkop'",
+    "common_name_cl": "Príncipe negro",
+    "aliases": [
+      "aeonium",
+      "príncipe negro",
+      "siempreviva arbórea",
+      "rosa negra"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 10,
+    "min_watering_days": 7,
+    "max_watering_days": 18,
+    "watering_confidence": "baja",
+    "watering_source": "Estimación; OJO: entra en dormancia en verano, ahí reducir a 20-30d",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "pierde el negro y se vuelve verde en semisombra",
+      "cierra la roseta en verano (dormancia, no está muriendo)",
+      "tallo largo y desnudo",
+      "pudrición si se riega en dormancia estival"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aeonium haworthii 'Sunburst'",
+    "common_name_cl": "Aeonium Sunburst",
+    "aliases": [
+      "sunburst",
+      "aeonium sunburst"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Agave 'Blue Glow'",
+    "common_name_cl": "Agave Blue Glow",
+    "aliases": [
+      "blue glow",
+      "agave azul"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Agave attenuata",
+    "common_name_cl": "Agave cola de zorro",
+    "aliases": [
+      "agave attenuata",
+      "cola de zorro",
+      "maguey sin espinas"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aloe arborescens",
+    "common_name_cl": "Aloe candelabro",
+    "aliases": [
+      "aloe arborescens",
+      "sabila de candelabro"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aloe striata",
+    "common_name_cl": "Aloe coral",
+    "aliases": [
+      "aloe striata",
+      "aloe de coral"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Aloe vera",
+    "common_name_cl": "Aloe vera",
+    "aliases": [
+      "sábila",
+      "aloe",
+      "áloe",
+      "penca sábila"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 14,
+    "min_watering_days": 9,
+    "max_watering_days": 25,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (greengrowshop.cl): 10-15d verano, 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas blandas y cafés en la base por sobrerriego",
+      "hojas delgadas y curvadas por sed",
+      "color rojizo por estrés de sol (reversible)",
+      "hijuelos que compiten por espacio"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Chamaecereus silvestrii",
+    "common_name_cl": "Cola de raton",
+    "aliases": [
+      "chamaecereus",
+      "cola de raton",
+      "cactus mani"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "manchas cafes corchosas por sobrerriego",
+      "cuerpo blando = pudricion avanzada",
+      "etiolacion por poca luz",
+      "espinas peligrosas"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Cotyledon orbiculata",
+    "common_name_cl": "Oreja de oso",
+    "aliases": [
+      "oreja de oso",
+      "cotyledon",
+      "oreja de perro"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "contiene glucosidos cardiacos aunque ASPCA no la lista: tratar como toxica",
+      "pierde el polvo blanco al tocarla (no vuelve)",
+      "pudricion por sobrerriego",
+      "etiolacion en sombra"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Crassula ovata",
+    "common_name_cl": "Árbol de jade",
+    "aliases": [
+      "jade",
+      "planta del dinero",
+      "árbol de la abundancia",
+      "crásula"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 14,
+    "min_watering_days": 9,
+    "max_watering_days": 25,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (greengrowshop.cl): 10-15d verano, 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "manchas blancas de cochinilla",
+      "tallo torcido y débil por poca luz"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Crassula ovata 'Gollum'",
+    "common_name_cl": "Oreja de Shrek",
+    "aliases": [
+      "gollum",
+      "oreja de Shrek",
+      "jade gollum",
+      "dedos de Shrek"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Echeveria agavoides",
+    "common_name_cl": "Echeveria agavoides",
+    "aliases": [
+      "agavoides",
+      "scarlet",
+      "echeveria lipstick"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Echeveria elegans",
+    "common_name_cl": "Echeveria",
+    "aliases": [
+      "echeveria",
+      "rosa de alabastro",
+      "siempreviva",
+      "suculenta rosa"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 12,
+    "min_watering_days": 8,
+    "max_watering_days": 21,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (greengrowshop.cl): 10-15d verano, 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "etiolación (se estira y pierde forma de rosa) por poca luz",
+      "pudrición del centro por agua en la roseta",
+      "hojas bajas secas (normal)",
+      "quemadura por sol directo tras estar en interior"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Echeveria runyonii",
+    "common_name_cl": "Echeveria runyonii",
+    "aliases": [
+      "runyonii",
+      "topsy turvy",
+      "runyoni rose"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Echinocactus grusonii",
+    "common_name_cl": "Asiento de suegra",
+    "aliases": [
+      "cactus barril dorado",
+      "asiento de suegra",
+      "bola de oro"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 18,
+    "min_watering_days": 12,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Chilena directa (greengrowshop.cl): 10-15d verano, 20-30d invierno; ajustado al alza por ser cactus de desierto",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "manchas cafés corchosas en la base (irreversible) por sobrerriego",
+      "cuerpo blando = pudrición avanzada",
+      "no crece si nunca se fertiliza",
+      "espinas peligrosas cerca de niños"
+    ],
+    "care_archetype": "manual_v1",
+    "species_verified_cl": "si"
+  },
+  {
+    "scientific_name": "Echinopsis chiloensis",
+    "common_name_cl": "Quisco",
+    "aliases": [
+      "quisco",
+      "cactus chileno",
+      "hualtata"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "nativa chilena protegida: comprar solo con guia de origen",
+      "pudricion basal si se riega en invierno",
+      "manchas corchosas",
+      "crecimiento lentisimo"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Euphorbia tirucalli",
+    "common_name_cl": "Palito",
+    "aliases": [
+      "cactus lapiz",
+      "palito",
+      "dedos del diablo",
+      "euphorbia tirucalli"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "savia lechosa muy irritante: NO podar sin guantes ni cerca de los ojos",
+      "tallos amarillos por sobrerriego",
+      "se estira sin sol",
+      "frio la pudre"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Euphorbia trigona",
+    "common_name_cl": "Cactus euphorbia",
+    "aliases": [
+      "euphorbia trigona",
+      "cactus catedral",
+      "arbol de la leche"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "manchas cafes corchosas por sobrerriego",
+      "cuerpo blando = pudricion avanzada",
+      "etiolacion por poca luz",
+      "espinas peligrosas"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Faucaria tuberculosa",
+    "common_name_cl": "Boca de tigre",
+    "aliases": [
+      "faucaria",
+      "boca de tigre",
+      "mandibulas"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Gymnocalycium mihanovichii",
+    "common_name_cl": "Cactus injertado",
+    "aliases": [
+      "cactus rubi",
+      "cactus injertado",
+      "cabeza de rubi"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "media",
+    "suitable_outdoor": "no",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "manchas cafes corchosas por sobrerriego",
+      "cuerpo blando = pudricion avanzada",
+      "etiolacion por poca luz",
+      "espinas peligrosas"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Haworthiopsis fasciata",
+    "common_name_cl": "Haworthia cebra",
+    "aliases": [
+      "haworthia",
+      "haworthia cebra",
+      "planta cebra"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 17,
+    "min_watering_days": 11,
+    "max_watering_days": 28,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_dura' — kenaz.cl zamioculca 14-21d verano; greengrowshop suculentas",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "pudricion de base/rizoma por exceso de agua",
+      "hojas arrugadas por sequia extrema",
+      "crecimiento detenido en sombra",
+      "puntas cafes secas"
+    ],
+    "care_archetype": "suculenta_dura",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Kalanchoe beharensis",
+    "common_name_cl": "Oreja de elefante suculenta",
+    "aliases": [
+      "kalanchoe beharensis",
+      "oreja de elefante fieltro"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Kalanchoe blossfeldiana",
+    "common_name_cl": "Kalanchoe",
+    "aliases": [
+      "calanchoe",
+      "kalanchoe",
+      "calandiva"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "TOXICA: glucosidos cardiacos, peligrosa para gatos",
+      "deja de florecer sin dias cortos",
+      "pudricion del cuello por sobrerriego",
+      "tallos largos tras florecer"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Kalanchoe tomentosa",
+    "common_name_cl": "Orejas de gato",
+    "aliases": [
+      "panda plant",
+      "orejas de gato",
+      "kalanchoe tomentosa"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "si",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Lewisia cotyledon",
+    "common_name_cl": "Lewisia",
+    "aliases": [
+      "lewisia",
+      "rosa de los riscos"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "media",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Lobivia spp.",
+    "common_name_cl": "Lobivia",
+    "aliases": [
+      "lobivia",
+      "jardin de lobivias",
+      "echinopsis"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "manchas cafes corchosas por sobrerriego",
+      "cuerpo blando = pudricion avanzada",
+      "etiolacion por poca luz",
+      "espinas peligrosas"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Mammillaria spp.",
+    "common_name_cl": "Mammillaria",
+    "aliases": [
+      "mamilaria",
+      "cactus bola",
+      "cactus de espinas finas"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "manchas cafes corchosas por sobrerriego",
+      "cuerpo blando = pudricion avanzada",
+      "etiolacion por poca luz",
+      "espinas peligrosas"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Opuntia ficus-indica",
+    "common_name_cl": "Tuna",
+    "aliases": [
+      "tuna",
+      "nopal",
+      "higo chumbo"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 20,
+    "min_watering_days": 13,
+    "max_watering_days": 35,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'cactus' — greengrowshop.cl suculentas/cactus 10-15d verano, ajustado al alza",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no_listado_aspca",
+    "common_problems": [
+      "gloquidios (espinas invisibles) que se clavan y cuesta sacar",
+      "pudricion basal por sobrerriego",
+      "palas arrugadas por sed",
+      "manchas por conchuela"
+    ],
+    "care_archetype": "cactus",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Portulacaria afra",
+    "common_name_cl": "Jade enano",
+    "aliases": [
+      "arbolito de jade enano",
+      "portulacaria",
+      "jade elefante"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Schlumbergera truncata",
+    "common_name_cl": "Santa Teresita",
+    "aliases": [
+      "cactus de Navidad",
+      "santa teresita",
+      "flor de mayo"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 11,
+    "min_watering_days": 7,
+    "max_watering_days": 19,
+    "watering_confidence": "media",
+    "watering_source": "Arquetipo 'semisuculenta' — Entre base interior CL y base suculentas CL (10-15d verano)",
+    "light_need": "media",
+    "suitable_outdoor": "semisombra_protegida",
+    "frost_sensitive": "si",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "no florece sin noches largas y frescas de otono",
+      "botones que caen si se mueve la maceta al florecer",
+      "segmentos arrugados por sed",
+      "pudricion basal"
+    ],
+    "care_archetype": "semisuculenta",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Sedum rubrotinctum",
+    "common_name_cl": "Sedum rojo",
+    "aliases": [
+      "sedum rojo",
+      "frijolitos",
+      "jelly bean"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "parcial",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Sedum spurium",
+    "common_name_cl": "Sedum rosado",
+    "aliases": [
+      "sedum rosado",
+      "sedum tapizante"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  },
+  {
+    "scientific_name": "Sempervivum tectorum",
+    "common_name_cl": "Siempreviva",
+    "aliases": [
+      "sempervivum",
+      "siempreviva de tejado",
+      "gallina y pollitos"
+    ],
+    "category": "suculenta_cactus",
+    "base_watering_days": 13,
+    "min_watering_days": 8,
+    "max_watering_days": 22,
+    "watering_confidence": "alta",
+    "watering_source": "Arquetipo 'suculenta_hoja' — greengrowshop.cl suculentas: 10-15d verano / 20-30d invierno",
+    "light_need": "alta",
+    "suitable_outdoor": "si",
+    "frost_sensitive": "no",
+    "toxic_to_pets": "no",
+    "common_problems": [
+      "hojas arrugadas por sed",
+      "hojas que se caen al tocarlas por sobrerriego",
+      "etiolacion por poca luz",
+      "cochinilla"
+    ],
+    "care_archetype": "suculenta_hoja",
+    "species_verified_cl": "no"
+  }
+]

@@ -1,0 +1,22 @@
+# Config de Supabase para las Edge Functions de Flory.
+#
+# `project_id` lo escribe `supabase link --project-ref <ref>` en local; se deja vacío
+# a propósito para no fijar un proyecto en el repo.
+project_id = "flory"
+
+# --- Edge Functions -------------------------------------------------------------
+#
+# verify_jwt = true: la plataforma valida el JWT del usuario ANTES de ejecutar la
+# función. El cliente lo manda como Bearer solo cuando hay sesión iniciada
+# (lib/supabase.ts:27-30); como toda la app está detrás del auth gate, siempre la hay.
+# Dentro de la función, el user_id se saca de ese mismo token con
+# `admin.auth.getUser(token)`. La llave de OpenAI y la service_role viven solo aquí.
+
+[functions.diagnose]
+verify_jwt = true
+
+[functions.identify]
+verify_jwt = true
+
+[functions.confirm-identification]
+verify_jwt = true
