@@ -1,12 +1,38 @@
 import * as ImagePicker from 'expo-image-picker';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Camera, Images } from 'lucide-react-native';
+import { useState } from 'react';
 import { Alert, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { setPendingCapture } from '@/components/diagnostico/diagnosis-flow';
+import { ChoiceChip } from '@/components/onboarding/choices';
 import { Button } from '@/components/ui/button';
+import type { DiagnosisFocus } from '@/lib/ai';
 import { colors, layout, palette, radius, space, type as typography } from '@/theme/tokens';
+
+/**
+ * Modos de diagnóstico. El foco no filtra el análisis: le dice al modelo dónde mirar
+ * primero para que no tenga que deducir la intención. El hint de la cámara se adapta a
+ * lo elegido para que la foto llegue con lo que ese modo necesita.
+ */
+const FOCUS_MODES: { value: DiagnosisFocus; label: string; hint: string }[] = [
+  {
+    value: 'general',
+    label: 'General',
+    hint: 'Con buena luz y de cerca. Si algo se ve raro en una hoja, enfócala: así puedo mirarte mejor.',
+  },
+  {
+    value: 'plagas',
+    label: 'Plagas',
+    hint: 'Acércate al envés de las hojas, los nudos y la tierra. Los bichitos y el polvillo se me escapan de lejos.',
+  },
+  {
+    value: 'hojas',
+    label: 'Hojas',
+    hint: 'Enfoca las hojas con el problema: manchas, bordes o color. De cerca y con buena luz.',
+  },
+];
 
 /**
  * Encuadre para el diagnóstico. Se usa la cámara nativa (expo-image-picker), no un visor
@@ -19,6 +45,9 @@ import { colors, layout, palette, radius, space, type as typography } from '@/th
 export default function CamaraScreen() {
   const insets = useSafeAreaInsets();
   const { plantId } = useLocalSearchParams<{ plantId: string }>();
+  const [focus, setFocus] = useState<DiagnosisFocus>('general');
+
+  const mode = FOCUS_MODES.find((option) => option.value === focus) ?? FOCUS_MODES[0];
 
   const capture = async (from: 'camera' | 'library') => {
     if (!plantId) {
@@ -54,6 +83,7 @@ export default function CamaraScreen() {
     setPendingCapture({
       plantId,
       localUri: asset.uri,
+      focus,
       width: asset.width,
       height: asset.height,
     });
@@ -71,10 +101,20 @@ export default function CamaraScreen() {
           <Camera size={40} color={palette.lime400} strokeWidth={2} />
         </View>
         <Text style={styles.title}>Muéstrame entera</Text>
-        <Text style={styles.hint}>
-          Con buena luz y de cerca. Si algo se ve raro en una hoja, enfócala: así puedo
-          mirarte mejor.
-        </Text>
+
+        <Text style={styles.modeQuestion}>¿Qué quieres que revise?</Text>
+        <View style={styles.modeRow}>
+          {FOCUS_MODES.map((option) => (
+            <ChoiceChip
+              key={option.value}
+              label={option.label}
+              selected={option.value === focus}
+              onPress={() => setFocus(option.value)}
+            />
+          ))}
+        </View>
+
+        <Text style={styles.hint}>{mode.hint}</Text>
       </View>
 
       <View style={styles.actions}>
@@ -129,6 +169,19 @@ const styles = StyleSheet.create({
     ...typography.h3,
     color: colors.textOnForest,
     textAlign: 'center',
+  },
+  modeQuestion: {
+    ...typography.sm,
+    fontFamily: typography.eyebrow.fontFamily,
+    color: colors.textOnForest,
+    opacity: 0.85,
+    textAlign: 'center',
+  },
+  modeRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: space[2],
   },
   hint: {
     ...typography.md,

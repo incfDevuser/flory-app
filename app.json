@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "flory-app",
+    "name": "Flory",
     "slug": "flory-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -9,9 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "cl.flory.app",
+      "supportsTablet": false,
+      "usesAppleSignIn": true,
+      "appleTeamId": "P28ZSYM5MX",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "cl.flory.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -27,6 +34,7 @@
     },
     "plugins": [
       "expo-router",
+      "expo-apple-authentication",
       [
         "expo-splash-screen",
         {
@@ -47,11 +55,26 @@
           "cameraPermission": "Flory usa la cámara para identificar tu planta o fotografiarla para su ficha.",
           "microphonePermission": false
         }
+      ],
+      [
+        "react-native-nitro-google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.436744184679-h44kqgsmdc8dkqcvpbtqj0sm5fu23ddf"
+        }
       ]
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "googleWebClientId": "436744184679-thnke6a785uvld50l0cv6til01o6odrt.apps.googleusercontent.com",
+      "googleIosClientId": "436744184679-h44kqgsmdc8dkqcvpbtqj0sm5fu23ddf.apps.googleusercontent.com",
+      "eas": {
+        "projectId": "65394a79-e6f0-449a-bf2b-d200c9ceebf1"
+      }
+    },
+    "owner": "incfdevuser"
   }
 }

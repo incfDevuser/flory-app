@@ -31,7 +31,7 @@ Deno.serve(async (req) => {
   const userId = await getUserId(admin, req.headers.get('Authorization'));
   if (!userId) return json({ error: 'no_session' }, 401);
 
-  let body: { plantId?: string; imageBase64?: string };
+  let body: { plantId?: string; imageBase64?: string; focus?: string };
   try {
     body = await req.json();
   } catch {
@@ -39,6 +39,9 @@ Deno.serve(async (req) => {
   }
   const { plantId, imageBase64 } = body;
   if (!plantId || !imageBase64) return json({ error: 'bad_request' }, 400);
+
+  // El foco orienta al modelo; no lo obliga. Un cliente viejo no lo manda → 'general'.
+  const focus = toFocus(body.focus);
 
   // La planta tiene que ser del usuario. Se trae aquí y de paso sirve de contexto.
   const { data: plant, error: plantError } = await admin
@@ -114,7 +117,7 @@ Deno.serve(async (req) => {
   }
 
   // 4. Contexto: lo que desambigua la foto débil (INTEGRACION_IA.MD:303-334).
-  const context = await buildContext(admin, plant);
+  const context = await buildContext(admin, plant, focus);
 
   // 5. Luna. (Escalamiento a Terra apagado: FLORY_ENABLE_TERRA.)
   const model = Deno.env.get('FLORY_MODEL_LUNA') ?? 'gpt-5.6-luna';
@@ -220,6 +223,25 @@ Deno.serve(async (req) => {
 
 // ---------------------------------------------------------------------------------
 
+/**
+ * Foco del usuario. Se re-valida aquí (no se puede importar el tipo del cliente en el
+ * runtime de Deno) y se traduce a una instrucción para el modelo. Es una pista que
+ * prioriza dónde mirar: nunca calla un problema más grave en otra parte.
+ */
+type DiagnosisFocus = 'general' | 'plagas' | 'hojas';
+
+function toFocus(value: unknown): DiagnosisFocus {
+  return value === 'plagas' || value === 'hojas' ? value : 'general';
+}
+
+const FOCUS_LINE: Record<DiagnosisFocus, string> = {
+  general: 'La persona pide un diagnóstico general de salud.',
+  plagas:
+    'La persona sospecha insectos o plagas: revisa con especial cuidado el envés de las hojas, los nudos, los brotes nuevos y la superficie de la tierra. Si no encuentras plaga, dilo con honestidad y sigue con el resto.',
+  hojas:
+    'La persona quiere que revises las hojas: color, manchas, textura y bordes. Si el problema real está en otra parte (riego, luz, raíces), dilo igual.',
+};
+
 type SpeciesCtx = {
   common_name: string;
   scientific_name: string;
@@ -252,9 +274,19 @@ type PlantCtx = {
 };
 
 /** Arma el bloque de texto que acompaña a la foto. Todo sale de la base, no del usuario. */
-async function buildContext(admin: ReturnType<typeof createAdminClient>, plant: PlantCtx) {
+async function buildContext(
+  admin: ReturnType<typeof createAdminClient>,
+  plant: PlantCtx,
+  focus: DiagnosisFocus
+) {
   const species = Array.isArray(plant.species) ? plant.species[0] : plant.species;
-  const lines: string[] = ['PLANTA OBJETIVO', `Ficha: ${plant.nickname}.`];
+  const lines: string[] = [
+    'FOCO DEL USUARIO',
+    FOCUS_LINE[focus],
+    '',
+    'PLANTA OBJETIVO',
+    `Ficha: ${plant.nickname}.`,
+  ];
 
   // ESPECIE — se prefiere el prompt_context ya redactado del catálogo.
   if (species) {

@@ -2,6 +2,7 @@ import type { Session } from '@supabase/supabase-js';
 import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { createContext, use, useCallback, useEffect, useState, type ReactNode } from 'react';
 
+import { signOutFromGoogle } from '@/lib/google-auth';
 import { queryKeys } from '@/lib/query';
 import { supabase } from '@/lib/supabase';
 
@@ -82,6 +83,9 @@ export function SessionProvider({ children }: { children: ReactNode }) {
   const signOut = useCallback(async () => {
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
+    // Supabase y Google mantienen sesiones distintas. La de Google se limpia para que
+    // el próximo acceso permita elegir otra cuenta; un fallo aquí no reabre Supabase.
+    await signOutFromGoogle().catch(() => undefined);
     queryClient.clear();
   }, [queryClient]);
 

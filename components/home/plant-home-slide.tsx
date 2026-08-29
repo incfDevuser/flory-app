@@ -206,7 +206,12 @@ export function PlantHomeSlide({
         <Button
           label="¿Me pasa algo?"
           variant="secondary"
-          onPress={() => router.push("/diagnostico/camara")}
+          onPress={() =>
+            router.push({
+              pathname: "/diagnostico/camara",
+              params: { plantId: plant.id },
+            })
+          }
           leadingIcon={
             <Siren size={20} color={colors.textHeading} strokeWidth={2.2} />
           }

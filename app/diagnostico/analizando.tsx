@@ -62,6 +62,7 @@ export default function AnalizandoScreen() {
     const result = await diagnosePlant({
       plantId: capture.plantId,
       localUri: capture.localUri,
+      focus: capture.focus,
       width: capture.width,
       height: capture.height,
     });

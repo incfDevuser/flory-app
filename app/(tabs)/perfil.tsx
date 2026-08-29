@@ -12,11 +12,12 @@ import {
   Zap,
 } from 'lucide-react-native';
 import { useState } from 'react';
-import { Alert, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Alert, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { DeleteAccountSheet } from '@/components/perfil/delete-account-sheet';
 import { ListRow } from '@/components/ui/list-row';
+import { openLegal } from '@/lib/links';
 import { queryKeys } from '@/lib/query';
 import { useSession } from '@/lib/session';
 import { supabase } from '@/lib/supabase';
@@ -125,12 +126,6 @@ export default function PerfilScreen() {
             value={plantCount.data === undefined ? undefined : String(plantCount.data)}
             onPress={() => router.navigate('/plantas')}
           />
-          <Divider />
-          <ListRow
-            label="Mi reserva"
-            icon={<Zap size={19} color={colors.actionPrimaryHover} strokeWidth={2.2} />}
-            onPress={() => router.navigate('/flory')}
-          />
         </Section>
 
         <Section title="Ajustes">
@@ -148,26 +143,27 @@ export default function PerfilScreen() {
           <Divider />
           <ListRow
             label="Ayuda y contacto"
-            note="Pronto vas a poder escribirnos desde aquí"
-            icon={<CircleHelp size={19} color={colors.textFaint} strokeWidth={2.2} />}
-            disabled
+            note="@somosflory"
+            icon={<CircleHelp size={19} color={colors.actionPrimaryHover} strokeWidth={2.2} />}
+            onPress={() => {
+              void Linking.openURL('https://www.instagram.com/somosflory/').catch(() => {
+                Alert.alert('No se pudo abrir Instagram', 'Inténtalo de nuevo en un momento.');
+              });
+            }}
           />
         </Section>
 
         <Section title="Legal">
-          {/* Sin URL todavía. Enlazar a una página inventada sería peor que esperar. */}
           <ListRow
             label="Términos y condiciones"
-            note="Todavía no está publicado"
-            icon={<FileText size={19} color={colors.textFaint} strokeWidth={2.2} />}
-            disabled
+            icon={<FileText size={19} color={colors.actionPrimaryHover} strokeWidth={2.2} />}
+            onPress={() => openLegal('terms')}
           />
           <Divider />
           <ListRow
             label="Política de privacidad"
-            note="Todavía no está publicada"
-            icon={<Shield size={19} color={colors.textFaint} strokeWidth={2.2} />}
-            disabled
+            icon={<Shield size={19} color={colors.actionPrimaryHover} strokeWidth={2.2} />}
+            onPress={() => openLegal('privacy')}
           />
         </Section>
 

@@ -19,6 +19,7 @@ export const queryKeys = {
   plantDiagnoses: (plantId: string) => ['plant-diagnoses', plantId] as const,
   plantDiagnosesAll: (plantId: string) => ['plant-diagnoses-all', plantId] as const,
   diagnosis: (diagnosisId: string) => ['diagnosis', diagnosisId] as const,
+  chatMessages: (plantId: string) => ['chat-messages', plantId] as const,
   plantSummary: (plantId: string) => ['plant-summary', plantId] as const,
   /** Catálogo de planes: 4 filas que solo cambian con un deploy. */
   plans: () => ['plans'] as const,

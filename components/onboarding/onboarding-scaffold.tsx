@@ -96,9 +96,10 @@ export function OnboardingScaffold({
         style={[
           styles.footer,
           elevation.lg,
-          // En modal, iOS ya deja el gesto de cierre abajo y el inset lo aporta la
-          // propia hoja: sumarlo otra vez levanta el botón sobre un vacío.
-          { paddingBottom: (variant === 'modal' ? space[1] : insets.bottom) + space[3] },
+          // `presentation: 'modal'` no es una hoja desprendida: en Android edge-to-edge el
+          // borde inferior es el del teléfono y en iPhone queda sobre el home indicator. Hay
+          // que respetar el inset con un piso mínimo para que el botón no toque el borde.
+          { paddingBottom: Math.max(insets.bottom, space[1]) + space[3] },
         ]}
       >
         {footer}

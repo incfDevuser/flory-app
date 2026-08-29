@@ -1,0 +1,63 @@
+{
+  "configVersion": 0,
+  "apple": {
+    "version": "1.0",
+    "copyright": "2026 Cristopher Arredondo Canchis",
+    "release": {
+      "automaticRelease": false
+    },
+    "categories": ["LIFESTYLE", "UTILITIES"],
+    "info": {
+      "es-MX": {
+        "title": "Flory",
+        "subtitle": "Tu planta te habla",
+        "promoText": "Tu planta te dice qué necesita: cuándo regar, cómo está y qué le pasa. Identifícala y diagnostica problemas con una foto. Sin números, sin adivinar, sin culpa.",
+        "description": "¿Compraste una planta con toda la ilusión y la viste morir sin saber por qué? No es que no tengas \"mano para las plantas\". Es que nadie te dio la información en el momento justo.\n\nFlory convierte tu planta en alguien que te dice, en primera persona, qué necesita y cuándo. Nada de porcentajes, gráficos ni tecnicismos: solo tu planta, hablándote claro.\n\nQUÉ HACE FLORY POR TI\n\nTe avisa cuándo regar, sin adivinar\nFlory calcula el momento de riego según la especie, el ambiente y cómo la cuidas. En vez de un frío \"recordatorio de riego\", te dice: \"tengo sed, ¿me riegas?\".\n\nIdentifica tu planta con una foto\n¿No sabes qué especie tienes? Tómale una foto y Flory la reconoce para darte cuidados a su medida.\n\nDiagnostica problemas desde una foto\n¿Hojas amarillas, manchas, algo raro? Flory revisa una foto y te dice qué podría estar pasando y qué hacer. Y cuando no está segura, te lo dice con honestidad.\n\nUn estado que entiendes en 2 segundos\nBien, atención o urgente. De un vistazo sabes cómo está tu planta, sin leer un manual.\n\nPOR QUÉ SE SIENTE DISTINTA\n\nFlory nunca te reta ni te hace sentir culpable. Si algo salió mal, te acompaña a arreglarlo. Tener plantas no debería dar ansiedad: debería ser lindo.\n\nEmpieza gratis y deja de sentir que \"no tienes mano para las plantas\". Sí la tienes. Solo te faltaba que tu planta te hablara.",
+        "keywords": [
+          "plantas",
+          "riego",
+          "cuidado",
+          "recordatorio",
+          "jardin",
+          "interior",
+          "suculentas",
+          "identificar",
+          "diagnostico",
+          "hogar"
+        ],
+        "supportUrl": "https://somosflory.cl",
+        "marketingUrl": "https://somosflory.cl",
+        "privacyPolicyUrl": "https://somosflory.cl/privacidad"
+      }
+    },
+    "advisory": {
+      "ageRatingOverride": "NONE",
+      "alcoholTobaccoOrDrugUseOrReferences": "NONE",
+      "contests": "NONE",
+      "gambling": false,
+      "gamblingSimulated": "NONE",
+      "horrorOrFearThemes": "NONE",
+      "kidsAgeBand": null,
+      "koreaAgeRatingOverride": "NONE",
+      "lootBox": false,
+      "matureOrSuggestiveThemes": "NONE",
+      "medicalOrTreatmentInformation": "NONE",
+      "profanityOrCrudeHumor": "NONE",
+      "sexualContentGraphicAndNudity": "NONE",
+      "sexualContentOrNudity": "NONE",
+      "unrestrictedWebAccess": false,
+      "violenceCartoonOrFantasy": "NONE",
+      "violenceRealistic": "NONE",
+      "violenceRealisticProlongedGraphicOrSadistic": "NONE",
+      "advertising": false,
+      "ageAssurance": false,
+      "ageRatingOverrideV2": "NONE",
+      "developerAgeRatingInfoUrl": null,
+      "gunsOrOtherWeapons": "NONE",
+      "healthOrWellnessTopics": false,
+      "messagingAndChat": false,
+      "parentalControls": false,
+      "userGeneratedContent": false
+    }
+  }
+}

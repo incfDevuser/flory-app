@@ -145,6 +145,105 @@ export async function callResponses<T>(params: ResponsesParams): Promise<Respons
   };
 }
 
+export type ChatTurn = { role: 'user' | 'assistant'; content: string };
+
+export type ChatParams = {
+  model: string;
+  /** Prefijo estático cacheable: la voz de Flory y sus reglas. */
+  instructions: string;
+  /** Contexto variable de la planta, va como primer turno de sistema-en-user. */
+  context: string;
+  /** Historial + mensaje nuevo, en orden cronológico. El último es el del usuario. */
+  turns: ChatTurn[];
+  maxOutputTokens: number;
+  reasoningEffort: ResponsesParams['reasoningEffort'];
+  promptCacheKey: string;
+  timeoutMs?: number;
+};
+
+export type ChatResult = {
+  text: string;
+  inputTokens: number;
+  outputTokens: number;
+};
+
+/**
+ * Chat de texto multivuelta sobre la Responses API. Hermano de `callResponses`, pero sin
+ * imágenes ni Structured Outputs: el chat responde texto libre y breve.
+ *
+ * El contexto de la planta va como un primer turno de usuario etiquetado (no como
+ * `instructions`, que es el prefijo cacheable y estable). Así el prompt caching sirve
+ * entre llamadas aunque el contexto cambie.
+ */
+export async function callChat(params: ChatParams): Promise<ChatResult> {
+  const apiKey = Deno.env.get('OPENAI_API_KEY');
+  if (!apiKey) throw new OpenAIError('generic', 'Falta OPENAI_API_KEY en el entorno.');
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), params.timeoutMs ?? 15_000);
+
+  const input = [
+    { role: 'user' as const, content: [{ type: 'input_text', text: params.context }] },
+    ...params.turns.map((turn) => ({
+      role: turn.role === 'assistant' ? ('assistant' as const) : ('user' as const),
+      content: [
+        {
+          type: turn.role === 'assistant' ? ('output_text' as const) : ('input_text' as const),
+          text: turn.content,
+        },
+      ],
+    })),
+  ];
+
+  let res: Response;
+  try {
+    res = await fetch(ENDPOINT, {
+      method: 'POST',
+      signal: controller.signal,
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: params.model,
+        instructions: params.instructions,
+        input,
+        text: { verbosity: 'low' },
+        reasoning: { effort: params.reasoningEffort },
+        max_output_tokens: params.maxOutputTokens,
+        store: false,
+        prompt_cache_key: params.promptCacheKey,
+      }),
+    });
+  } catch (err) {
+    if (err instanceof DOMException && err.name === 'AbortError') {
+      throw new OpenAIError('timeout', 'La llamada al modelo superó el tiempo límite.');
+    }
+    throw new OpenAIError('generic', String(err));
+  } finally {
+    clearTimeout(timeout);
+  }
+
+  if (!res.ok) {
+    const detail = await res.json().catch(() => ({}));
+    throw new OpenAIError('generic', detail?.error?.message ?? `HTTP ${res.status}`);
+  }
+
+  const data = await res.json();
+
+  const refusal = findRefusal(data);
+  if (refusal) throw new OpenAIError('content_filter', refusal);
+
+  const text = extractOutputText(data);
+  if (!text) throw new OpenAIError('invalid_json', 'El modelo no devolvió texto.');
+
+  return {
+    text: text.trim(),
+    inputTokens: data?.usage?.input_tokens ?? 0,
+    outputTokens: data?.usage?.output_tokens ?? 0,
+  };
+}
+
 /** El texto estructurado sale en `output_text`, o hilando los bloques de `output`. */
 function extractOutputText(data: any): string | null {
   if (typeof data?.output_text === 'string' && data.output_text.length > 0) {

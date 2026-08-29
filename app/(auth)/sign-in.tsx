@@ -6,11 +6,15 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { AuthScaffold } from '@/components/auth/auth-scaffold';
 import { Banner } from '@/components/ui/banner';
 import { Button } from '@/components/ui/button';
+import { Checkbox } from '@/components/ui/checkbox';
 import { DividerO } from '@/components/ui/divider-o';
 import { Field } from '@/components/ui/field';
 import { PasswordField } from '@/components/ui/password-field';
 import { SocialButtons } from '@/components/ui/social-buttons';
+import { appleAuthErrorMessage, signInWithApple } from '@/lib/apple-auth';
 import { authError, type AuthErrorInfo } from '@/lib/auth-errors';
+import { googleAuthErrorMessage, signInWithGoogle } from '@/lib/google-auth';
+import { hasLegalLinks, openLegal } from '@/lib/links';
 import { supabase } from '@/lib/supabase';
 import { useOffline } from '@/lib/use-offline';
 import { colors, fonts, space, type as typography } from '@/theme/tokens';
@@ -24,6 +28,9 @@ export default function SignInScreen() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<AuthErrorInfo>();
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
+  const [appleLoading, setAppleLoading] = useState(false);
+  const [acceptedSocial, setAcceptedSocial] = useState(false);
   const offline = useOffline();
 
   // No se navega a mano al entrar: `Stack.Protected` en app/_layout.tsx reacciona al
@@ -41,7 +48,34 @@ export default function SignInScreen() {
     setLoading(false);
   }
 
+  async function googleSignIn() {
+    setGoogleLoading(true);
+    setError(undefined);
+
+    try {
+      await signInWithGoogle();
+    } catch (googleError) {
+      setError({ kind: 'generic', message: googleAuthErrorMessage(googleError) });
+    } finally {
+      setGoogleLoading(false);
+    }
+  }
+
+  async function appleSignIn() {
+    setAppleLoading(true);
+    setError(undefined);
+
+    try {
+      await signInWithApple();
+    } catch (appleError) {
+      setError({ kind: 'generic', message: appleAuthErrorMessage(appleError) });
+    } finally {
+      setAppleLoading(false);
+    }
+  }
+
   const canSubmit = email.trim().length > 0 && password.length > 0 && !offline;
+  const busy = loading || googleLoading || appleLoading;
 
   return (
     <AuthScaffold
@@ -69,7 +103,7 @@ export default function SignInScreen() {
           textContentType="emailAddress"
           keyboardType="email-address"
           inputMode="email"
-          editable={!loading}
+          editable={!busy}
           // El campo se pinta, pero el mensaje va una sola vez bajo el formulario.
           error={error?.kind === 'invalid_credentials'}
           leadingIcon={<Mail size={18} color={colors.textFaint} strokeWidth={2.2} />}
@@ -80,7 +114,7 @@ export default function SignInScreen() {
           onChangeText={setPassword}
           placeholder="Tu contraseña"
           autoComplete="current-password"
-          editable={!loading}
+          editable={!busy}
           error={error?.kind === 'invalid_credentials'}
           onSubmitEditing={canSubmit ? signIn : undefined}
           returnKeyType="go"
@@ -98,16 +132,46 @@ export default function SignInScreen() {
 
       {error ? <Banner tone="atencion" message={error.message} /> : null}
 
-      <Button label="Entrar" onPress={signIn} loading={loading} disabled={!canSubmit} />
+      <Button
+        label="Entrar"
+        onPress={signIn}
+        loading={loading}
+        disabled={!canSubmit || googleLoading || appleLoading}
+      />
 
       <DividerO />
 
+      <Checkbox
+        checked={acceptedSocial}
+        onChange={setAcceptedSocial}
+        accessibilityLabel="Acepto los términos y la política de privacidad para continuar con Google o Apple"
+        label={
+          <Text style={styles.legal}>
+            Para continuar con Google o Apple, acepto los{' '}
+            <Text
+              style={hasLegalLinks() ? styles.legalLink : styles.legalPending}
+              onPress={() => openLegal('terms')}
+            >
+              términos
+            </Text>{' '}
+            y la{' '}
+            <Text
+              style={hasLegalLinks() ? styles.legalLink : styles.legalPending}
+              onPress={() => openLegal('privacy')}
+            >
+              política de privacidad
+            </Text>
+            .
+          </Text>
+        }
+      />
+
       <SocialButtons
-        disabled={loading || offline}
-        // TODO(auth-social): pendiente de expo-apple-authentication y del proveedor
-        // OAuth en Supabase. Ver components/ui/social-buttons.tsx.
-        onApple={() => {}}
-        onGoogle={() => {}}
+        disabled={busy || offline || !acceptedSocial}
+        googleLoading={googleLoading}
+        appleLoading={appleLoading}
+        onGoogle={googleSignIn}
+        onApple={appleSignIn}
       />
     </AuthScaffold>
   );
@@ -125,6 +189,19 @@ const styles = StyleSheet.create({
     ...typography.sm,
     fontFamily: fonts.bodyBold,
     color: colors.actionPrimaryHover,
+  },
+  legal: {
+    ...typography.sm,
+    color: colors.textBody,
+  },
+  legalLink: {
+    fontFamily: fonts.bodyBold,
+    color: colors.actionPrimaryHover,
+    textDecorationLine: 'underline',
+  },
+  legalPending: {
+    fontFamily: fonts.bodyBold,
+    color: colors.textBody,
   },
   footerRow: {
     flexDirection: 'row',

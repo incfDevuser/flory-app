@@ -1,36 +1,23 @@
+import * as AppleAuthentication from 'expo-apple-authentication';
+import { useEffect, useState } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import { Button } from '@/components/ui/button';
-import { palette, space } from '@/theme/tokens';
+import { radius, space } from '@/theme/tokens';
 
 /**
  * Login social (FlorySpec §92-93).
  *
- * TODO(auth-social): hoy solo es la interfaz. Cablearlo pide
- *   - Apple: `expo-apple-authentication` + `expo-crypto` para el nonce, y
- *     `supabase.auth.signInWithIdToken`. No corre en Expo Go: necesita dev build.
- *   - Google: proveedor OAuth configurado en Supabase + `expo-web-browser`.
+ * Ambos proveedores entregan su ID token nativo a Supabase. Apple se muestra solo
+ * cuando el dispositivo confirma que el servicio está disponible.
  *
  * Reglas que hay que respetar al cablearlo:
  *   - Apple solo se ofrece en iOS. En Android no existe el botón.
  *   - Si en iOS hay cualquier login social de terceros, Apple pasa a ser
  *     **obligatorio** para App Store. Por eso van juntos o no va ninguno.
- *   - Las HIG de Apple fijan el estilo del botón y las cadenas admitidas. Aquí se usa
- *     el copy del spec; al cablearlo hay que revisarlo contra la guía vigente.
+ *   - Las HIG de Apple exigen `AppleAuthenticationButton`; no se recrea con iconos.
  */
-
-/** Glifo oficial de Apple, monocromo, hereda el color que se le pase. */
-function AppleGlyph({ color }: { color: string }) {
-  return (
-    <Svg width={18} height={18} viewBox="0 0 24 24">
-      <Path
-        fill={color}
-        d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
-      />
-    </Svg>
-  );
-}
 
 /** La G de Google va siempre a cuatro colores: es requisito de su marca. */
 function GoogleGlyph() {
@@ -54,25 +41,60 @@ function GoogleGlyph() {
 }
 
 type SocialButtonsProps = {
-  onApple: () => void;
+  onApple?: () => void;
   onGoogle: () => void;
   disabled?: boolean;
+  googleLoading?: boolean;
+  appleLoading?: boolean;
 };
 
-export function SocialButtons({ onApple, onGoogle, disabled = false }: SocialButtonsProps) {
+export function SocialButtons({
+  onApple,
+  onGoogle,
+  disabled = false,
+  googleLoading = false,
+  appleLoading = false,
+}: SocialButtonsProps) {
+  const [appleAvailable, setAppleAvailable] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+
+    if (Platform.OS !== 'ios' || !onApple) return;
+
+    AppleAuthentication.isAvailableAsync()
+      .then((available) => {
+        if (active) setAppleAvailable(available);
+      })
+      .catch(() => {
+        if (active) setAppleAvailable(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [onApple]);
+
+  const appleInert = disabled || appleLoading;
+
   return (
     <View style={styles.stack}>
       {/* Apple no existe fuera de iOS: mostrarlo en Android sería un botón que no
           puede funcionar nunca. */}
-      {Platform.OS === 'ios' ? (
-        <Button
-          label="Continuar con Apple"
-          variant="outline"
-          size="md"
-          disabled={disabled}
-          onPress={onApple}
-          leadingIcon={<AppleGlyph color={palette.ink900} />}
-        />
+      {appleAvailable && onApple ? (
+        <View
+          accessibilityState={{ disabled: appleInert, busy: appleLoading }}
+          pointerEvents={appleInert ? 'none' : 'auto'}
+        >
+          <AppleAuthentication.AppleAuthenticationButton
+            accessibilityLabel="Continuar con Apple"
+            buttonType={AppleAuthentication.AppleAuthenticationButtonType.CONTINUE}
+            buttonStyle={AppleAuthentication.AppleAuthenticationButtonStyle.WHITE_OUTLINE}
+            cornerRadius={radius.pill}
+            onPress={onApple}
+            style={styles.appleButton}
+          />
+        </View>
       ) : null}
 
       <Button
@@ -80,6 +102,7 @@ export function SocialButtons({ onApple, onGoogle, disabled = false }: SocialBut
         variant="outline"
         size="md"
         disabled={disabled}
+        loading={googleLoading}
         onPress={onGoogle}
         leadingIcon={<GoogleGlyph />}
       />
@@ -90,5 +113,9 @@ export function SocialButtons({ onApple, onGoogle, disabled = false }: SocialBut
 const styles = StyleSheet.create({
   stack: {
     gap: space[3],
+  },
+  appleButton: {
+    width: '100%',
+    height: 46,
   },
 });

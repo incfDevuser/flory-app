@@ -12,11 +12,23 @@ project_id = "flory"
 # Dentro de la función, el user_id se saca de ese mismo token con
 # `admin.auth.getUser(token)`. La llave de OpenAI y la service_role viven solo aquí.
 
+# `import_map` apunta al deno.json compartido (mapea `@supabase/supabase-js` a su
+# specifier npm). Sin esto, el bundler remoto —el que se usa cuando Docker no corre—
+# no resuelve el import bare de `_shared/supabaseAdmin.ts` y el deploy falla con
+# "Relative import path not prefixed". La ruta es relativa a este config.toml.
+
 [functions.diagnose]
 verify_jwt = true
+import_map = "./functions/deno.json"
 
 [functions.identify]
 verify_jwt = true
+import_map = "./functions/deno.json"
 
 [functions.confirm-identification]
 verify_jwt = true
+import_map = "./functions/deno.json"
+
+[functions.chat]
+verify_jwt = true
+import_map = "./functions/deno.json"

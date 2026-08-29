@@ -136,17 +136,6 @@ function RootNavigator() {
             options={{ title: 'Seguimiento' }}
           />
 
-          <Stack.Screen name="reserva/detalle" options={{ title: 'Reserva' }} />
-          <Stack.Screen
-            name="reserva/confirmacion"
-            options={{
-              // No se vuelve a la pantalla de pago.
-              gestureEnabled: false,
-              headerBackVisible: false,
-              title: 'Listo',
-            }}
-          />
-
           <Stack.Screen name="ajustes/notificaciones" options={{ title: 'Avisos' }} />
         </Stack.Protected>
       </Stack>

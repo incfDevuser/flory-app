@@ -12,6 +12,13 @@ import type { PlantStatus } from '@/lib/plant-vocab';
  * service_role: solo su JWT de sesión viaja como Bearer.
  */
 
+/**
+ * Foco elegido por la persona antes de la foto (camara.tsx). No filtra el diagnóstico:
+ * es una pista para que el modelo priorice dónde mirar y no tenga que deducir la
+ * intención. El default es `general`; un cliente que no lo mande cae ahí en el servidor.
+ */
+export type DiagnosisFocus = 'general' | 'plagas' | 'hojas';
+
 export type DiagnosisRow = {
   id: string;
   plant_id: string | null;
@@ -222,10 +229,11 @@ function quotaMessage(resetsOn: string | null | undefined): string {
 export async function diagnosePlant(params: {
   plantId: string;
   localUri: string;
+  focus?: DiagnosisFocus;
   width?: number;
   height?: number;
 }): Promise<DiagnoseResult> {
-  const { plantId, localUri, width, height } = params;
+  const { plantId, localUri, focus = 'general', width, height } = params;
 
   let imageBase64: string;
   try {
@@ -235,7 +243,7 @@ export async function diagnosePlant(params: {
   }
 
   const { data, error } = await supabase.functions.invoke('diagnose', {
-    body: { plantId, imageBase64 },
+    body: { plantId, imageBase64, focus },
   });
 
   if (error) {

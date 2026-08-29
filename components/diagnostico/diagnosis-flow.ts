@@ -7,9 +7,12 @@
  * análisis lo consume una vez y lo limpia.
  */
 
+import type { DiagnosisFocus } from '@/lib/ai';
+
 export type PendingCapture = {
   plantId: string;
   localUri: string;
+  focus: DiagnosisFocus;
   width?: number;
   height?: number;
 };

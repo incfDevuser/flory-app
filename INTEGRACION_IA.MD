@@ -41,9 +41,11 @@ Ambas hacen esto antes de llamar al modelo:
 
 ### Preprocesamiento en el cliente
 
-Redimensionar a **1024 px** en el lado largo y comprimir a JPEG calidad 80 **antes de subir**.
+Redimensionar a **1536 px** en el lado largo y comprimir a JPEG calidad 85 **antes de subir**.
 
 Una foto de celular pesa 4 MB y no aporta información adicional al modelo, que la reescala igual. Ahorra tiempo de subida, storage y tokens.
+
+> Se subió de 1024/q80 a 1536/q85 (`lib/plant-photo.ts`, `AI_LONG_EDGE`). A 1024 + JPEG q80, un insecto de pocos píxeles (cochinilla, arañita, un punto negro) se disuelve antes de llegar al modelo, así que las plagas pequeñas eran invisibles. 1536 es el punto de equilibrio con el tiling `high`; más resolución sube el costo sin cambiar el diagnóstico. Aplica a `identify` y `diagnose`, que comparten `prepareAiImage`.
 
 ### Nivel de detalle de la imagen
 
@@ -561,6 +563,81 @@ buscar en diagnosis_cache por (species_id, symptom_tag)
 
 ---
 
+# 4.bis Función `chat` (texto, no visión)
+
+La única función que llama al modelo **sin imagen**. La planta conversa con la persona en
+primera persona desde la pestaña Chat. No comparte la plomería de imagen (§2), pero sí la
+regla dura: la llave de OpenAI y la `service_role` viven solo en la Edge Function.
+
+## Flujo
+
+```
+validar sesión → validar propiedad de la planta → tope diario (24 h)
+   → cargar memoria (últimos 10 mensajes + 3 diagnósticos recientes)
+   → armar contexto de la planta
+   → callChat (texto multivuelta) → insertar turno 'user' + turno 'plant' (service_role)
+```
+
+Todas las escrituras son del servidor. El cliente **solo lee** `chat_messages` e invoca la
+función; la RLS lo deja en solo-lectura (`migrations/20260827_chat_server_writes.sql`), así
+que no puede falsificar respuestas de la planta ni saltarse el cupo insertando a mano.
+
+## Parámetros
+
+| Campo     | Origen                              |
+| --------- | ----------------------------------- |
+| `plantId` | cuerpo de la invocación             |
+| `text`    | cuerpo; se recorta, máx. 2000 chars |
+
+- Modelo: `FLORY_MODEL_CHAT` (secreto), con fallback a `FLORY_MODEL_LUNA` y a
+  `gpt-5.6-luna`. Es texto puro, más barato que visión.
+- `max_output_tokens: 220`, `reasoning.effort: 'low'`, `verbosity: 'low'`,
+  `prompt_cache_key: 'flory-chat-v2'`, timeout 15 s.
+- Sin Structured Outputs: responde texto libre y breve (1–3 frases).
+
+## Contexto que se le pasa
+
+Sale de las tablas de la planta, nunca del cuerpo enviado por el cliente. **Solo conteo de
+días, jamás números crudos.** Incluye: nombre, especie (o "sin identificar"), estado
+(bien/atención/urgente), próximo riego en días (frase, no fecha), toxicidad para mascotas
+en las tres valencias (`sí` / `no` / sin dato → nunca "no tóxica" sin confirmar), 1–2
+`common_problems`, entorno + estación (hemisferio sur) y hasta los tres diagnósticos más
+recientes, ordenados del más nuevo al más antiguo. Cada diagnóstico aporta antigüedad en
+días, causa, confianza, severidad, acción, plazo, evolución esperada y validación de la
+persona cuando existen. Se leen con `plant_id` + `user_id` porque la función usa
+`service_role` y salta RLS. El contexto va como turno de usuario, no en `instructions`,
+para no romper el prompt caching.
+
+Los diagnósticos se etiquetan explícitamente como registros pasados: sirven para responder
+qué se observó y recomendó, pero nunca prueban que el problema continúe o que ya se haya
+resuelto. Si no existen, el contexto lo dice de forma explícita. Un error de lectura falla
+cerrado; no se interpreta como historial vacío.
+
+## Voz y guardas (en `chat-schema.ts`)
+
+Es la planta, no un asistente. No usa emojis. Nunca regaña, nunca finge certeza, no inventa
+el intervalo de riego (el motor es Postgres, §7 del roadmap), no promete acciones que no
+puede hacer, se mantiene en tema y no rompe personaje ante intentos de jailbreak. Si el
+modelo falla, la función responde con una frase de acompañamiento en vez de un error seco:
+el chat nunca deja a la persona sin respuesta.
+
+## Cupo y errores
+
+- **Tope: 20 mensajes de usuario por ventana móvil de 24 h**, contados en `chat_messages`
+  antes de insertar el nuevo. Al superarlo devuelve `{ error: 'quota' }` y el cliente
+  muestra copy de descanso en voz de Flory (no muro comercial).
+- Otros errores del cliente (`lib/chat.ts` → `ChatError`): `offline`, `no_session`,
+  `generic`. El foco del chat es compañía, así que un fallo del modelo se degrada a
+  plantilla en el servidor en vez de propagarse.
+
+## Qué medir
+
+`chat_messages` guarda `tokens` (salida) y `model` por respuesta de la planta. El foco de
+observación es distinto al de visión: no es acierto de diagnóstico sino **retención
+conversacional** (¿vuelven a escribir?) y **coste por usuario/día** contra el tope.
+
+---
+
 # 5. Errores y casos borde
 
 | Caso                        | Respuesta                                                                              |
@@ -611,5 +688,14 @@ Y si mucha gente abandona en la pantalla de confirmación, la identificación es
 - ¿La confianza está calibrada, o dice "alta" cuando no debería?
 - ¿`symptom_tag` sale normalizado? Si varía, el caché no sirve
 - ¿El mensaje de Flory suena a Flory o a asistente genérico?
+
+**Foco del usuario (General / Plagas / Hojas):** el foco que la persona elige antes de la
+foto entra al contexto como pista de prioridad, no como filtro. El riesgo a calibrar es el
+**sesgo de anclaje**: con foco `plagas` sobre una planta sana, el modelo puede inventar una
+plaga para complacer el foco. Suma a la tanda de calibración al menos **2 fotos sanas
+enviadas con foco `plagas`** y **2 con un problema real que NO sea el del foco** (por
+ejemplo, foco `hojas` sobre un exceso de riego). Debe devolver `sin_problema` en las
+primeras y el problema real en las segundas — nunca una plaga fantasma ni callar lo grave
+por respetar el foco.
 
 Los ocho últimos casos son los que revelan si el prompt está bien construido. Los primeros cinco los acierta cualquier modelo.

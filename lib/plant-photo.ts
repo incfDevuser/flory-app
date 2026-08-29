@@ -21,13 +21,18 @@ const MAX_DIMENSION = 1024;
 const JPEG_QUALITY = 0.7;
 
 /**
- * Preprocesado para la IA (INTEGRACION_IA.MD:42-46): 1024 px en el lado largo y JPEG
- * calidad 80. Distinto del de la foto de perfil de la planta: la IA no recorta a
- * cuadrado (necesita ver la hoja entera) y sube la calidad un punto porque el modelo
- * mira bordes de manchas.
+ * Preprocesado para la IA (INTEGRACION_IA.MD:42-46): 1536 px en el lado largo y JPEG
+ * calidad 85. Distinto del de la foto de perfil de la planta: la IA no recorta a
+ * cuadrado (necesita ver la hoja entera) y sube la calidad porque el modelo mira bordes
+ * de manchas.
+ *
+ * Se subió de 1024/q80 a 1536/q85 para no perder plagas pequeñas: un insecto de pocos
+ * píxeles (cochinilla, arañita, un punto negro) se disuelve al bajar a 1024 y comprimir,
+ * antes de que el modelo lo vea. 1536 es el punto de equilibrio con el tiling `high` de
+ * OpenAI; más allá el detalle extra ya no cambia el diagnóstico y solo sube el costo.
  */
-const AI_LONG_EDGE = 1024;
-const AI_JPEG_QUALITY = 0.8;
+const AI_LONG_EDGE = 1536;
+const AI_JPEG_QUALITY = 0.85;
 
 /**
  * Redimensiona al lado largo y devuelve la imagen en base64 para mandarla en el cuerpo

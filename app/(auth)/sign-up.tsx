@@ -11,7 +11,9 @@ import { DividerO } from '@/components/ui/divider-o';
 import { Field } from '@/components/ui/field';
 import { PasswordField } from '@/components/ui/password-field';
 import { SocialButtons } from '@/components/ui/social-buttons';
+import { appleAuthErrorMessage, signInWithApple } from '@/lib/apple-auth';
 import { authError, type AuthErrorInfo } from '@/lib/auth-errors';
+import { googleAuthErrorMessage, signInWithGoogle } from '@/lib/google-auth';
 import { hasLegalLinks, openLegal } from '@/lib/links';
 import { supabase } from '@/lib/supabase';
 import { useOffline } from '@/lib/use-offline';
@@ -26,6 +28,8 @@ export default function SignUpScreen() {
   const [accepted, setAccepted] = useState(false);
   const [error, setError] = useState<AuthErrorInfo>();
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
+  const [appleLoading, setAppleLoading] = useState(false);
   const offline = useOffline();
 
   const longEnough = password.length >= MIN_PASSWORD;
@@ -56,12 +60,39 @@ export default function SignUpScreen() {
     setLoading(false);
   }
 
+  async function googleSignUp() {
+    setGoogleLoading(true);
+    setError(undefined);
+
+    try {
+      await signInWithGoogle();
+    } catch (googleError) {
+      setError({ kind: 'generic', message: googleAuthErrorMessage(googleError) });
+    } finally {
+      setGoogleLoading(false);
+    }
+  }
+
+  async function appleSignUp() {
+    setAppleLoading(true);
+    setError(undefined);
+
+    try {
+      await signInWithApple();
+    } catch (appleError) {
+      setError({ kind: 'generic', message: appleAuthErrorMessage(appleError) });
+    } finally {
+      setAppleLoading(false);
+    }
+  }
+
   const canSubmit =
     displayName.trim().length > 0 &&
     email.trim().length > 0 &&
     longEnough &&
     accepted &&
     !offline;
+  const busy = loading || googleLoading || appleLoading;
 
   return (
     <AuthScaffold
@@ -88,7 +119,7 @@ export default function SignUpScreen() {
           autoComplete="name"
           textContentType="name"
           maxLength={60}
-          editable={!loading}
+          editable={!busy}
           leadingIcon={<UserRound size={18} color={colors.textFaint} strokeWidth={2.2} />}
         />
 
@@ -103,7 +134,7 @@ export default function SignUpScreen() {
           textContentType="emailAddress"
           keyboardType="email-address"
           inputMode="email"
-          editable={!loading}
+          editable={!busy}
           error={error?.kind === 'email_exists'}
           leadingIcon={<Mail size={18} color={colors.textFaint} strokeWidth={2.2} />}
         />
@@ -114,7 +145,7 @@ export default function SignUpScreen() {
             onChangeText={setPassword}
             placeholder="Crea una contraseña"
             autoComplete="new-password"
-            editable={!loading}
+            editable={!busy}
           />
           {/* El requisito se ve ANTES de escribir, no como error después (§112).
               Solo se marca cuando se cumple; nunca se pinta en rojo al fallar. */}
@@ -163,15 +194,21 @@ export default function SignUpScreen() {
         }
       />
 
-      <Button label="Crear cuenta" onPress={signUp} loading={loading} disabled={!canSubmit} />
+      <Button
+        label="Crear cuenta"
+        onPress={signUp}
+        loading={loading}
+        disabled={!canSubmit || googleLoading || appleLoading}
+      />
 
       <DividerO />
 
       <SocialButtons
-        disabled={loading || offline}
-        // TODO(auth-social): ver components/ui/social-buttons.tsx.
-        onApple={() => {}}
-        onGoogle={() => {}}
+        disabled={busy || offline || !accepted}
+        googleLoading={googleLoading}
+        appleLoading={appleLoading}
+        onGoogle={googleSignUp}
+        onApple={appleSignUp}
       />
     </AuthScaffold>
   );

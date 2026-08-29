@@ -1,4 +1,4 @@
-import { Bell, Cpu, House, Sprout, User } from 'lucide-react-native';
+import { House, MessageCircle, Sprout, User } from 'lucide-react-native';
 import type { ComponentType } from 'react';
 
 export type TabIcon = ComponentType<{
@@ -19,7 +19,7 @@ export type TabIcon = ComponentType<{
  * Las claves son los nombres de ruta dentro de `app/(tabs)/`, que es lo que
  * React Navigation expone en `state.routes[].name`.
  */
-export const TAB_ORDER = ['index', 'plantas', 'actividad', 'flory', 'perfil'] as const;
+export const TAB_ORDER = ['index', 'plantas', 'actividad', 'perfil'] as const;
 
 export type TabName = (typeof TAB_ORDER)[number];
 
@@ -27,8 +27,7 @@ export type TabName = (typeof TAB_ORDER)[number];
 export const TABS: Record<TabName, { label: string; icon: TabIcon }> = {
   index: { label: 'Hoy', icon: House },
   plantas: { label: 'Plantas', icon: Sprout },
-  actividad: { label: 'Avisos', icon: Bell },
-  flory: { label: 'Flory', icon: Cpu },
+  actividad: { label: 'Chat', icon: MessageCircle },
   perfil: { label: 'Perfil', icon: User },
 };
 

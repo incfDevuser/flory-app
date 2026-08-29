@@ -1,0 +1,28 @@
+{
+  "cli": {
+    "version": ">= 22.6.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "ascAppId": "6806155883",
+        "ascApiKeyPath": "/Users/mgomeznavarro.pygmail.com/Downloads/AuthKey_KC25XSMP58.p8",
+        "ascApiKeyId": "KC25XSMP58",
+        "ascApiKeyIssuerId": "464d7d43-0252-47c0-987e-b74f46e68ed4"
+      }
+    }
+  }
+}
