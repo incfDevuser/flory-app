@@ -15,10 +15,19 @@ type CheckboxProps = {
   /** Lo que oye el lector de pantalla, ya que `label` puede ser JSX. */
   accessibilityLabel: string;
   disabled?: boolean;
+  /** Resalta el cuadro en coral cuando falta marcarlo (p. ej. términos sin aceptar). */
+  invalid?: boolean;
 };
 
 /** 24px, radio 8, tick blanco (§8.2). */
-export function Checkbox({ checked, onChange, label, accessibilityLabel, disabled = false }: CheckboxProps) {
+export function Checkbox({
+  checked,
+  onChange,
+  label,
+  accessibilityLabel,
+  disabled = false,
+  invalid = false,
+}: CheckboxProps) {
   const scale = useSharedValue(1);
   const animatedStyle = useAnimatedStyle(() => ({ transform: [{ scale: scale.get() }] }));
 
@@ -40,7 +49,13 @@ export function Checkbox({ checked, onChange, label, accessibilityLabel, disable
       hitSlop={{ top: space[2], bottom: space[2] }}
       style={[styles.root, disabled ? styles.disabled : null]}
     >
-      <Animated.View style={[styles.box, checked ? styles.boxChecked : null, animatedStyle]}>
+      <Animated.View
+        style={[
+          styles.box,
+          checked ? styles.boxChecked : invalid ? styles.boxInvalid : null,
+          animatedStyle,
+        ]}
+      >
         {checked ? <Check size={15} color={colors.textOnBrand} strokeWidth={3.5} /> : null}
       </Animated.View>
       <View style={styles.label}>{label}</View>
@@ -72,6 +87,9 @@ const styles = StyleSheet.create({
   boxChecked: {
     backgroundColor: colors.actionPrimary,
     borderColor: colors.actionPrimary,
+  },
+  boxInvalid: {
+    borderColor: colors.statusUrgente,
   },
   label: {
     flex: 1,

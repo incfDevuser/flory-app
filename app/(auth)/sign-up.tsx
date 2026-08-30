@@ -26,6 +26,7 @@ export default function SignUpScreen() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [accepted, setAccepted] = useState(false);
+  const [termsError, setTermsError] = useState(false);
   const [error, setError] = useState<AuthErrorInfo>();
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
@@ -60,7 +61,16 @@ export default function SignUpScreen() {
     setLoading(false);
   }
 
+  // El login social exige aceptar términos. Si no, se avisa en vez de no hacer nada:
+  // el botón no queda deshabilitado, así el toque da feedback claro.
+  function requireTerms(): boolean {
+    if (accepted) return true;
+    setTermsError(true);
+    return false;
+  }
+
   async function googleSignUp() {
+    if (!requireTerms()) return;
     setGoogleLoading(true);
     setError(undefined);
 
@@ -74,6 +84,7 @@ export default function SignUpScreen() {
   }
 
   async function appleSignUp() {
+    if (!requireTerms()) return;
     setAppleLoading(true);
     setError(undefined);
 
@@ -171,7 +182,11 @@ export default function SignUpScreen() {
 
       <Checkbox
         checked={accepted}
-        onChange={setAccepted}
+        invalid={termsError && !accepted}
+        onChange={(next) => {
+          setAccepted(next);
+          if (next) setTermsError(false);
+        }}
         accessibilityLabel="Acepto los términos y la política de privacidad"
         label={
           <Text style={styles.legal}>
@@ -203,8 +218,17 @@ export default function SignUpScreen() {
 
       <DividerO />
 
+      {termsError && !accepted ? (
+        <Banner
+          tone="atencion"
+          message="Primero acepta los términos y la política de privacidad para continuar."
+        />
+      ) : null}
+
+      {/* Habilitados aunque falten los términos: el toque avisa (requireTerms) en vez de
+          quedarse muerto, que era lo poco intuitivo. */}
       <SocialButtons
-        disabled={busy || offline || !accepted}
+        disabled={busy || offline}
         googleLoading={googleLoading}
         appleLoading={appleLoading}
         onGoogle={googleSignUp}

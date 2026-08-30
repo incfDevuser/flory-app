@@ -3,6 +3,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query';
 import { createContext, use, useCallback, useEffect, useState, type ReactNode } from 'react';
 
 import { signOutFromGoogle } from '@/lib/google-auth';
+import { clearPushToken, registerForPushNotifications } from '@/lib/push';
 import { queryKeys } from '@/lib/query';
 import { supabase } from '@/lib/supabase';
 
@@ -13,6 +14,8 @@ export type Profile = {
   email: string | null;
   plan: 'free' | 'founding' | 'plus' | 'pro';
   founding_user: boolean | null;
+  push_enabled: boolean | null;
+  push_hour: number | null;
 };
 
 type SessionValue = {
@@ -66,7 +69,7 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     queryFn: async () => {
       const { data, error } = await supabase
         .from('profiles')
-        .select('onboarded_at, display_name, email, plan, founding_user')
+        .select('onboarded_at, display_name, email, plan, founding_user, push_enabled, push_hour')
         .eq('id', userId!)
         .maybeSingle();
 
@@ -75,19 +78,28 @@ export function SessionProvider({ children }: { children: ReactNode }) {
     },
   });
 
+  // Al haber sesión, registrar el token de push (permiso + Expo token → profiles).
+  // Best-effort y solo en dispositivo físico; en simulador/web no hace nada.
+  useEffect(() => {
+    if (userId) void registerForPushNotifications(userId);
+  }, [userId]);
+
   const refreshProfile = useCallback(async () => {
     if (!userId) return;
     await queryClient.invalidateQueries({ queryKey: queryKeys.profile(userId) });
   }, [queryClient, userId]);
 
   const signOut = useCallback(async () => {
+    // Antes de cerrar sesión (después no habría auth para escribir): soltar el token de
+    // este dispositivo, para que no siga recibiendo los avisos de la cuenta anterior.
+    if (userId) await clearPushToken(userId);
     const { error } = await supabase.auth.signOut();
     if (error) throw error;
     // Supabase y Google mantienen sesiones distintas. La de Google se limpia para que
     // el próximo acceso permita elegir otra cuenta; un fallo aquí no reabre Supabase.
     await signOutFromGoogle().catch(() => undefined);
     queryClient.clear();
-  }, [queryClient]);
+  }, [queryClient, userId]);
 
   const value: SessionValue = {
     session,

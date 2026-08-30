@@ -32,3 +32,9 @@ import_map = "./functions/deno.json"
 [functions.chat]
 verify_jwt = true
 import_map = "./functions/deno.json"
+
+# La invoca pg_cron, no un usuario: sin JWT. Se protege con el header `x-cron-secret`
+# (env CRON_SECRET). Ver migrations/20260828_notifications_cron.sql.
+[functions.send-notifications]
+verify_jwt = false
+import_map = "./functions/deno.json"

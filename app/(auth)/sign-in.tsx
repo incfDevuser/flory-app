@@ -31,6 +31,7 @@ export default function SignInScreen() {
   const [googleLoading, setGoogleLoading] = useState(false);
   const [appleLoading, setAppleLoading] = useState(false);
   const [acceptedSocial, setAcceptedSocial] = useState(false);
+  const [termsError, setTermsError] = useState(false);
   const offline = useOffline();
 
   // No se navega a mano al entrar: `Stack.Protected` en app/_layout.tsx reacciona al
@@ -48,7 +49,16 @@ export default function SignInScreen() {
     setLoading(false);
   }
 
+  // El login social exige aceptar términos. Si faltan, se avisa en vez de dejar el botón
+  // muerto (que era lo poco intuitivo).
+  function requireTerms(): boolean {
+    if (acceptedSocial) return true;
+    setTermsError(true);
+    return false;
+  }
+
   async function googleSignIn() {
+    if (!requireTerms()) return;
     setGoogleLoading(true);
     setError(undefined);
 
@@ -62,6 +72,7 @@ export default function SignInScreen() {
   }
 
   async function appleSignIn() {
+    if (!requireTerms()) return;
     setAppleLoading(true);
     setError(undefined);
 
@@ -143,7 +154,11 @@ export default function SignInScreen() {
 
       <Checkbox
         checked={acceptedSocial}
-        onChange={setAcceptedSocial}
+        invalid={termsError && !acceptedSocial}
+        onChange={(next) => {
+          setAcceptedSocial(next);
+          if (next) setTermsError(false);
+        }}
         accessibilityLabel="Acepto los términos y la política de privacidad para continuar con Google o Apple"
         label={
           <Text style={styles.legal}>
@@ -166,8 +181,16 @@ export default function SignInScreen() {
         }
       />
 
+      {termsError && !acceptedSocial ? (
+        <Banner
+          tone="atencion"
+          message="Primero acepta los términos y la política de privacidad para continuar."
+        />
+      ) : null}
+
+      {/* Habilitados aunque falten los términos: el toque avisa (requireTerms). */}
       <SocialButtons
-        disabled={busy || offline || !acceptedSocial}
+        disabled={busy || offline}
         googleLoading={googleLoading}
         appleLoading={appleLoading}
         onGoogle={googleSignIn}

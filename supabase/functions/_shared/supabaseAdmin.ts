@@ -18,21 +18,30 @@ export function createAdminClient(): SupabaseClient {
 }
 
 /**
- * Extrae el JWT del header Authorization y devuelve el user_id validado.
+ * Extrae el JWT del header Authorization y devuelve el user_id (claim `sub`).
  *
- * `verify_jwt = true` ya rechaza tokens inválidos en la plataforma, pero necesitamos el
- * id: se lo pedimos a `auth.getUser(token)` usando el propio cliente admin. Devuelve
- * null si no hay token o no resuelve un usuario.
+ * Decodifica el payload del token LOCALMENTE, sin llamar a GoTrue. Es seguro: con
+ * `verify_jwt = true`, el gateway de Supabase ya validó firma y expiración ANTES de
+ * ejecutar la función, así que el `sub` es de fiar. (Antes se usaba `auth.getUser(token)`,
+ * pero ese endpoint de GoTrue puede colgarse ~100s y arrastraba a todas las funciones de
+ * IA; el resto de la app no lo nota porque PostgREST valida el JWT por su cuenta.)
+ *
+ * `admin` se conserva en la firma por compatibilidad con los call-sites; ya no se usa.
+ * Devuelve null si no hay token, no hay `sub`, o el payload no parsea.
  */
-export async function getUserId(
-  admin: SupabaseClient,
-  authHeader: string | null
-): Promise<string | null> {
+export function getUserId(_admin: SupabaseClient, authHeader: string | null): string | null {
   if (!authHeader) return null;
   const token = authHeader.replace(/^Bearer\s+/i, '').trim();
   if (!token) return null;
 
-  const { data, error } = await admin.auth.getUser(token);
-  if (error || !data.user) return null;
-  return data.user.id;
+  const payloadSegment = token.split('.')[1];
+  if (!payloadSegment) return null;
+
+  try {
+    const base64 = payloadSegment.replace(/-/g, '+').replace(/_/g, '/');
+    const payload = JSON.parse(atob(base64)) as { sub?: unknown };
+    return typeof payload.sub === 'string' && payload.sub.length > 0 ? payload.sub : null;
+  } catch {
+    return null;
+  }
 }

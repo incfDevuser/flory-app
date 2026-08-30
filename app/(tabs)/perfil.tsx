@@ -129,16 +129,11 @@ export default function PerfilScreen() {
         </Section>
 
         <Section title="Ajustes">
-          {/*
-            Deshabilitado a propósito: no hay expo-notifications ni el job que envía los
-            avisos. Un interruptor que promete recordatorios que nunca llegan es peor
-            que no ofrecerlos.
-          */}
           <ListRow
             label="Notificaciones"
-            note="Disponible cuando activemos los avisos"
-            icon={<Bell size={19} color={colors.textFaint} strokeWidth={2.2} />}
-            disabled
+            note="Riego, revisiones y diagnósticos"
+            icon={<Bell size={19} color={colors.actionPrimaryHover} strokeWidth={2.2} />}
+            onPress={() => router.navigate('/ajustes/notificaciones')}
           />
           <Divider />
           <ListRow

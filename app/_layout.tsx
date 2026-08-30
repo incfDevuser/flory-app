@@ -13,9 +13,11 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import * as SystemUI from 'expo-system-ui';
-import { useEffect } from 'react';
+import { useState } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import { AnimatedSplash } from '@/components/animated-splash';
+import { useNotificationRouting } from '@/lib/push';
 import { queryClient } from '@/lib/query';
 import { SessionProvider, useSession } from '@/lib/session';
 import { colors, fonts } from '@/theme/tokens';
@@ -48,6 +50,9 @@ export default function RootLayout() {
 function RootNavigator() {
   const { session, onboardedAt, isLoading } = useSession();
 
+  // Tocar una notificación abre la ficha de esa planta (data.plantId).
+  useNotificationRouting();
+
   // Las claves tienen que coincidir con `fonts` en theme/tokens.ts: es el nombre con
   // el que RN resuelve la familia. `error` cuenta como resuelto a propósito — si una
   // fuente no carga, la app arranca con la del sistema en vez de quedarse en el splash.
@@ -60,15 +65,11 @@ function RootNavigator() {
   });
   const fontsReady = fontsLoaded || fontError !== null;
 
-  // El splash se mantiene hasta saber a la vez si hay sesión y si el onboarding está
-  // hecho. Si se soltara antes, un usuario ya registrado vería un frame de (auth).
-  // Las fuentes entran en la misma condición: soltarlo antes deja ver un frame con
-  // la tipografía del sistema y luego un salto de layout al llegar Baloo.
-  useEffect(() => {
-    if (!isLoading && fontsReady) {
-      SplashScreen.hideAsync();
-    }
-  }, [isLoading, fontsReady]);
+  // El splash NATIVO se mantiene hasta saber a la vez si hay sesión, si el onboarding está
+  // hecho, y si cargaron las fuentes. Soltarlo antes dejaría ver un frame de (auth) o de la
+  // tipografía del sistema. Ya listo, se monta el splash ANIMADO, que oculta el nativo y se
+  // disuelve hacia la app (ver components/animated-splash.tsx).
+  const [splashDone, setSplashDone] = useState(false);
 
   if (isLoading || !fontsReady) return null;
 
@@ -136,9 +137,13 @@ function RootNavigator() {
             options={{ title: 'Seguimiento' }}
           />
 
-          <Stack.Screen name="ajustes/notificaciones" options={{ title: 'Avisos' }} />
+          <Stack.Screen
+            name="ajustes/notificaciones"
+            options={{ title: 'Avisos', headerBackTitle: 'Perfil' }}
+          />
         </Stack.Protected>
       </Stack>
+      {!splashDone ? <AnimatedSplash onFinish={() => setSplashDone(true)} /> : null}
     </>
   );
 }
