@@ -39,24 +39,35 @@ const AI_JPEG_QUALITY = 0.85;
  * de la invocación. La Edge Function la decodifica, hashea, sube y firma (§2): el hash y
  * el dedupe viven del lado del servidor, así que aquí no se sube nada.
  *
- * `width`/`height` vienen del asset del picker para restringir el lado correcto sin un
- * decode extra. Si faltan, se acota el ancho (peor caso: una vertical queda un poco más
- * grande de 1024 de alto, sin consecuencia real).
+ * DOS PASADAS por la orientación EXIF. `expo-image-manipulator` no hornea de forma fiable
+ * la orientación EXIF al redimensionar (expo/expo #16736, #2512, #8416): una foto de cámara
+ * llega con los píxeles en un eje y una etiqueta que dice cómo rotarla, y si no se aplica,
+ * el modelo la recibe girada → la lee como ilegible ("No logro verme bien"), sobre todo en
+ * primeros planos. La galería no falla porque iOS entrega el asset ya orientado.
+ *
+ * Pasada 1: re-encodear sin acciones hornea la orientación y devuelve las dimensiones YA
+ * orientadas (fiables). Pasada 2: recién ahí se elige el lado largo con esas dimensiones y
+ * se redimensiona. Así no dependemos del `width/height` del picker (que en cámara puede
+ * venir pre-orientación, con los ejes cambiados) y nunca rotamos a mano (sin doble rotación).
+ * El `width/height` del asset del picker ya no se usa; se conserva el parámetro por compat.
  */
 export async function prepareAiImage(params: {
   localUri: string;
   width?: number;
   height?: number;
 }): Promise<string> {
-  const { localUri, width, height } = params;
-  const resize =
-    width && height
-      ? width >= height
-        ? { width: AI_LONG_EDGE }
-        : { height: AI_LONG_EDGE }
-      : { width: AI_LONG_EDGE };
+  const { localUri } = params;
 
-  const processed = await manipulateAsync(localUri, [{ resize }], {
+  // Pasada 1: normaliza la orientación y entrega las dimensiones reales ya orientadas.
+  const normalized = await manipulateAsync(localUri, [], { format: SaveFormat.JPEG });
+
+  const resize =
+    normalized.width >= normalized.height
+      ? { width: AI_LONG_EDGE }
+      : { height: AI_LONG_EDGE };
+
+  // Pasada 2: redimensiona sobre la imagen ya derecha.
+  const processed = await manipulateAsync(normalized.uri, [{ resize }], {
     compress: AI_JPEG_QUALITY,
     format: SaveFormat.JPEG,
     base64: true,
