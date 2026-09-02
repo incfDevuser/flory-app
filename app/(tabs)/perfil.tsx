@@ -9,7 +9,6 @@ import {
   Shield,
   Sprout,
   Trash2,
-  Zap,
 } from 'lucide-react-native';
 import { useState } from 'react';
 import { Alert, Linking, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -36,19 +35,6 @@ export default function PerfilScreen() {
   const tabBarHeight = useBottomTabBarHeight();
   const [isSigningOut, setIsSigningOut] = useState(false);
   const [deleting, setDeleting] = useState(false);
-
-  // `plans` es un catálogo público de 4 filas que solo cambia con un deploy, así que no
-  // tiene sentido revalidarlo. No hay FK entre profiles.plan y plans.tier, de modo que
-  // PostgREST no puede incrustarlo y el cruce se hace acá.
-  const plans = useQuery({
-    queryKey: queryKeys.plans(),
-    staleTime: Infinity,
-    queryFn: async () => {
-      const { data, error } = await supabase.from('plans').select('tier, name');
-      if (error) throw error;
-      return data as { tier: string; name: string }[];
-    },
-  });
 
   const plantCount = useQuery({
     queryKey: queryKeys.plantCount(userId ?? 'anon'),
@@ -84,7 +70,6 @@ export default function PerfilScreen() {
     ]);
   };
 
-  const planName = plans.data?.find((plan) => plan.tier === profile?.plan)?.name ?? null;
   const displayName = profile?.display_name?.trim();
 
   return (
@@ -102,21 +87,6 @@ export default function PerfilScreen() {
           </View>
           <Text style={styles.name}>{displayName || 'Tu cuenta'}</Text>
           {profile?.email ? <Text style={styles.email}>{profile.email}</Text> : null}
-        </View>
-
-        <View style={styles.planCard}>
-          <View style={styles.planIcon}>
-            <Zap size={20} color={colors.actionPrimaryHover} strokeWidth={2.2} />
-          </View>
-          <View style={styles.planCopy}>
-            <Text style={styles.planLabel}>Plan actual</Text>
-            <Text style={styles.planName}>{planName ?? '—'}</Text>
-          </View>
-          {profile?.founding_user ? (
-            <View style={styles.badge}>
-              <Text style={styles.badgeText}>Founding user</Text>
-            </View>
-          ) : null}
         </View>
 
         <Section title="Tu jardín">
@@ -252,47 +222,6 @@ const styles = StyleSheet.create({
     ...typography.sm,
     color: colors.textMuted,
     textAlign: 'center',
-  },
-  planCard: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: space[3],
-    padding: space[4],
-    borderRadius: radius.lg,
-    backgroundColor: colors.surfaceCard,
-    borderWidth: 1.5,
-    borderColor: colors.borderSubtle,
-  },
-  planIcon: {
-    width: 40,
-    height: 40,
-    borderRadius: radius.sm,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: colors.surfaceBrandSoft,
-  },
-  planCopy: {
-    flex: 1,
-    gap: 1,
-  },
-  planLabel: {
-    ...typography.xs,
-    color: colors.textMuted,
-  },
-  planName: {
-    ...typography.h4,
-    color: colors.textHeading,
-  },
-  badge: {
-    paddingHorizontal: space[3],
-    paddingVertical: space[1],
-    borderRadius: radius.pill,
-    backgroundColor: colors.surfaceForest,
-  },
-  badgeText: {
-    ...typography.xs,
-    fontFamily: fonts.bodyBold,
-    color: colors.textOnForest,
   },
   section: {
     gap: space[2],
